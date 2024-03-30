@@ -1,0 +1,8 @@
+.header {
+    &__bg {
+        object-fit: cover;
+        position: absolute;
+        opacity: 0.06;
+        z-index: -10;
+    }
+}

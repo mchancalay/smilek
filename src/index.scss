@@ -1,0 +1,27 @@
+/* -- BASE -- */
+@use './scss/base/colors';
+@use './scss/base/fonts';
+@use './scss/base/resets';
+
+/* -- ABSTRACTS -- */
+@use './scss/abstracts/mixins';
+@use './scss/abstracts/vars';
+
+/* -- COMPONENTS -- */
+/* - Header */
+@use './components/Header/header';
+@use './components/Navbar/navbar';
+@use './components/navbarLink/navbarLink';
+@use './components/ButtonImage/buttonImage';
+@use './components/ButtonDefault/buttonDefault';
+@use './components/HeaderContent/headerContent';
+
+@use './components/RoadMap/roadMap';
+@use './components/AboutUs/aboutUs';
+@use './components/CardInfo/cardInfo';
+@use './components/Bar/bar';
+@use './components/ContractCopy/contractCopy';
+@use './components/TitleSection/titleSection';
+@use './components/CardRoadMap/cardRoadMap';
+@use './components/Check/check';
+@use './components/Curves/curves';

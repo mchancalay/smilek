@@ -1,0 +1,36 @@
+@use '../../scss/base/fonts';
+
+.tS {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 6rem 0;
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__subtitle {
+        font-family: fonts.$general-font-secondary;
+    }
+
+    &__img {
+        width: 10rem;
+    }
+
+    &__title {
+        font-family: fonts.$general-font-secondary;
+        font-weight: bold;
+        font-size: 6rem; 
+        font-weight: 200;
+    }
+
+    &__img--flipped {
+        transform: scaleX(-1);
+    }
+}

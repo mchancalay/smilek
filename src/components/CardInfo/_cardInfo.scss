@@ -1,0 +1,19 @@
+@use '../../scss/base/colors';
+@use '../../scss/abstracts/vars';
+@use '../../scss/base/fonts';
+
+.cI {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+
+    &__title {
+        font-family: fonts.$general-font-secondary;
+    }
+
+    &__value {
+
+    }
+
+}

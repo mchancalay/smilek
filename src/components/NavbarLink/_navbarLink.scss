@@ -1,0 +1,23 @@
+@use '../../scss/base/colors';
+@use '../../scss/abstracts/vars';
+@use '../../scss/abstracts/mixins';
+
+.nbLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem;
+    border-radius: 50%;
+    transition: all .3s ease;
+
+    @include mixins.tooltip-styles;
+
+    &:hover {
+        background-color: colors.$light;
+    }
+
+    &__link {
+        width: vars.$icon-width-default;
+    }
+
+}

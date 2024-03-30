@@ -1,0 +1,32 @@
+@use '../../scss/base/colors';
+@use '../../scss/abstracts/vars';
+
+.check {
+    width: 1.8rem;
+    height: 1.8rem;
+    background: linear-gradient(15deg, colors.$primary, colors.$secondary, colors.$tertiary) no-repeat;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__bg {
+        background-color: vars.$os-bg-false-color;
+        border-radius: 50%;
+        width: 1.4rem;
+        height: 1.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--checked {
+            background-color: vars.$os-bg-true-color;
+            backdrop-filter: blur(vars.$os-blur);
+        }
+    }
+
+    &__check {
+        width: .9rem;
+    }
+
+}

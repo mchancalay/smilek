@@ -1,0 +1,88 @@
+@use '../../scss/base/colors';
+@use '../../scss/abstracts/vars';
+
+.bar {
+    position: relative;
+    width: 100vw;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__first,
+    &__second {
+        width: 110vw;
+        height: 7rem;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        background: linear-gradient(15deg, colors.$primary, colors.$secondary, colors.$tertiary) no-repeat;
+        background-size: 200%;
+        box-shadow: vars.$os-box-shadow;
+        -webkit-box-shadow: vars.$os-box-shadow;
+        -moz-box-shadow: vars.$os-box-shadow;
+    }
+
+    &__first {
+        position: absolute;
+        background-color: rgb(223, 74, 74);
+        transform: rotate(-3deg);
+        left: -100px;
+        /* -100 bcose 110vw */
+        opacity: 0.5;
+    }
+
+    &__second {
+        position: absolute;
+        background-color: rgb(197, 23, 23);
+        transform: rotate(3deg);
+        left: -100px;
+        /* -100 bcose 110vw */
+        opacity: 0.8;
+    }
+
+    &__container {
+        width: calc(100% - .4rem);
+        height: calc(100% - .4rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: #ffffffec;
+        backdrop-filter: blur(10px);
+    }
+
+    &__text {
+        color: white;
+    }
+
+    &__bg {
+        width: calc(100% - vars.$os-border);
+        height: calc(100% - vars.$os-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        &--false {
+            background-color: vars.$os-bg-false-color;
+            backdrop-filter: blur(vars.$os-blur);
+
+            &>p {
+                color: colors.$dark;
+            }
+        }
+
+        &--true {
+            background-color: vars.$os-bg-true-color;
+            backdrop-filter: blur(vars.$os-blur);
+
+            &>p {
+                color: colors.$white;
+            }
+        }
+    }
+}

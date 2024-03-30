@@ -1,0 +1,29 @@
+@use '../../scss/base/colors';
+@use '../../scss/abstracts/vars';
+@use '../../scss/abstracts/mixins';
+
+.cC {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    @include mixins.tooltip-styles;
+
+    &__icon {
+        width: vars.$icon-width-default;
+        height: 100%;
+        padding: .65rem 0;
+    }
+
+    &__rectangle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: colors.$dark;
+    }
+
+}

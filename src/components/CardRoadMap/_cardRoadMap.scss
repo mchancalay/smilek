@@ -1,0 +1,33 @@
+@use '../../scss/base/colors';
+@use '../../scss/abstracts/vars';
+@use '../../scss/base/fonts';
+
+.cRM {
+
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-weight: bold;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    &__img {
+        width: 14rem;
+        height: 100%;
+        padding: 1rem;
+    }
+
+}

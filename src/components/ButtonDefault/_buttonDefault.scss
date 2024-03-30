@@ -1,0 +1,57 @@
+@use '../../scss/base/colors';
+@use '../../scss/abstracts/vars';
+
+.bD {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background: linear-gradient(15deg, colors.$primary, colors.$secondary, colors.$tertiary) no-repeat;
+    background-size: 200%;
+    transition: all .3s ease;
+    box-shadow: vars.$os-box-shadow;
+    -webkit-box-shadow: vars.$os-box-shadow;
+    -moz-box-shadow: vars.$os-box-shadow;
+    height: 5.4rem;
+    width: 100%;
+    border-radius: vars.$border-radius-default;
+
+    &:hover {
+        cursor: pointer;
+        background-position: right center;
+    }
+
+    &__bg {
+        width: calc(100% - vars.$os-border);
+        height: calc(100% - vars.$os-border);
+        border-radius: vars.$border-radius-default;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        &--true {
+            background-color: vars.$os-bg-true-color;
+            backdrop-filter: blur(vars.$os-blur);
+
+            & > .bD__text {
+                color: colors.$white;
+            }
+        }
+
+        &--false {
+            background-color: vars.$os-bg-false-color;
+            backdrop-filter: blur(vars.$os-blur);
+
+            & > .bD__text {
+                color: colors.$dark;
+            }
+        }
+    }
+
+    &__icon {
+        width: 1.2rem;
+    }
+
+}

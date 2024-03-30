@@ -1,0 +1,37 @@
+@use '../../scss/abstracts/vars';
+@use '../../scss/base/colors';
+
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+$general-font-primary: "Space Grotesk", monospace;
+$general-font-secondary:  "Caveat", monospace;
+
+html {
+  font-size: 62.5%;
+  /* Establece 1 rem como 10px (10/16 * 100) */
+}
+
+$general-font-sizes: (
+  "h1": 4.8rem,
+  "h2": 3.6rem,
+  "h3": 2.8rem,
+  "h4": 2.6rem,
+  "h5": 2.4rem,
+  "h6": 2.2rem,
+  "p": vars.$font-size-default,
+  "a": vars.$font-size-default,
+  "li": vars.$font-size-default,
+  "span": vars.$font-size-default,
+  "button": vars.$font-size-default,
+  "label": vars.$font-size-default,
+  "input": vars.$font-size-default
+);
+
+@each $tag, $size in $general-font-sizes {
+  #{$tag} {
+    font-size: $size;
+    font-family: $general-font-primary;
+    color: colors.$dark;
+  }
+}

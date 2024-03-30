@@ -1,0 +1,25 @@
+@use '../../scss/base/colors';
+
+.rM {
+    background: linear-gradient(15deg, rgba(0, 255, 163, 0.01),rgba(3, 225, 255, 0.05), rgba(220, 31, 255, 0.09)) no-repeat;
+    padding: 10rem 0;
+    position: relative;
+
+    &__steps {
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+    }
+    
+    &__bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__img {
+        height: 100%;
+        position: relative;
+        top: -3.6rem
+    }
+}
