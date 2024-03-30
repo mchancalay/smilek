@@ -6,13 +6,11 @@ import RoadMap from './components/RoadMap/RoadMap'
 
 const App = () => {
   return (
-    <div>
-      <TokenDataProvider>
-        <Header />
-        <AboutUs/>
-        <RoadMap />
-      </TokenDataProvider>
-    </div>
+    <TokenDataProvider>
+      <Header />
+      <AboutUs />
+      <RoadMap />
+    </TokenDataProvider>
   )
 }
 
