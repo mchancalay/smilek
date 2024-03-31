@@ -7,7 +7,7 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding-top: vars.$navbar-total-height + vars.$spacing; /* 8rem nav + 6rem spacing*/
+  padding-top: vars.$navbar-total-height + 4rem;
 
   &__container {
     display: flex;

@@ -16,7 +16,7 @@
     box-shadow: vars.$os-box-shadow;
     -webkit-box-shadow: vars.$os-box-shadow;
     -moz-box-shadow: vars.$os-box-shadow;
-    height: 4.4rem;
+    height: 100%;
 
     &:hover {
         cursor: pointer;
@@ -40,7 +40,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 3rem;
+        margin-right: 2rem;
+        margin-left: -1rem;
         gap: 1rem;
     }
 
@@ -53,7 +54,8 @@
     }
 
     &__img {
-        width: 4.4rem;
+        flex: 0;
+        height: calc(100% + vars.$os-border);
         left: -20px;
         position: relative;
     }
