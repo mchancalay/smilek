@@ -3,8 +3,8 @@
 
 .buttonImage {
     border-radius: 1rem;
-    border-top-right-radius: vars.$border-radius-default;
-    border-bottom-right-radius: vars.$border-radius-default;
+    border-top-right-radius: vars.$border-radius-default + .4rem;
+    border-bottom-right-radius: vars.$border-radius-default + .4rem;
     border: none;
     display: flex;
     align-items: center;

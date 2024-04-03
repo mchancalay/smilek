@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useTokenData } from '../../context/TokenDataContext';
 import { formatMarketCap } from '../../js/functions'
-import CardInfo from '../CardInfo/CardInfo';
 import TitleSection from '../TitleSection/TitleSection';
 import { Container } from '@mui/material';
 
 const AboutUs = () => {
-
-    const [totalSupply, setTotalSupply] = useState(2008932945814);
-    const [circulatingSupply, setCirculatingSupply] = useState(2008932945814);
 
     const tokenData = useTokenData();
 
@@ -20,7 +16,7 @@ const AboutUs = () => {
         <div className='aU'>
             <Container maxWidth="lg">
                 <div className='aU__container'>
-                    <TitleSection title={'About us'} side={1}></TitleSection>
+                <TitleSection title={'About us'} firstSide={true}></TitleSection>
                     <div className='aU__box'>
                         <div className='aU__text'>
                             <p>Welcome to the $SMILEK era! 🚀 Since launch, we've been the crypto crusade the digital age demanded, championing key finance values like decentralization & fund individualization.</p>

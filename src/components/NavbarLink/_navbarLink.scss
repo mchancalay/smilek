@@ -14,10 +14,28 @@
 
     &:hover {
         background-color: colors.$light;
+
+        .nbLink__minicircle {
+            background-color: colors.$light;
+        }
     }
 
     &__link {
         width: vars.$icon-width-default;
+    }
+
+    &__text {
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    &__minicircle {
+        position: absolute;
+        padding: .5rem;
+        top: -8px;
+        right: -8px;
+        border-radius: 50%;
+        transition: all .3s ease;
     }
 
 }

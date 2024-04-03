@@ -1,0 +1,67 @@
+@use '../../scss/base/colors';
+@use '../../scss/abstracts/vars';
+
+.custom-shape-divider-top-1712005195 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1712005195 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 56px;
+}
+
+.custom-shape-divider-top-1712005195 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.fter {
+    background-color: colors.$white;
+    position: relative;
+    height: 5rem;
+    padding: 2rem 0;
+
+    &__text {
+        flex: 1;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5rem;
+
+    }
+
+    &__copy {
+        font-size: 1.3rem;
+    }
+
+    &__up {
+        flex: 1;
+    }
+
+    &__btn {
+        text-align: end;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__item {
+        width: vars.$icon-width-default;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}

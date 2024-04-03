@@ -28,7 +28,6 @@
 
     &__first {
         position: absolute;
-        background-color: rgb(223, 74, 74);
         transform: rotate(-3deg);
         left: -100px;
         /* -100 bcose 110vw */
@@ -37,7 +36,6 @@
 
     &__second {
         position: absolute;
-        background-color: rgb(197, 23, 23);
         transform: rotate(3deg);
         left: -100px;
         /* -100 bcose 110vw */
@@ -45,8 +43,8 @@
     }
 
     &__container {
-        width: calc(100% - .4rem);
-        height: calc(100% - .4rem);
+        width: calc(100% - vars.$os-border);
+        height: calc(100% - vars.$os-border);
         display: flex;
         align-items: center;
         justify-content: center;

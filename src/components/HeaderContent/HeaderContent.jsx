@@ -2,15 +2,19 @@ import React from 'react'
 import character from '../../assets/character.png'
 import { Container } from '@mui/material'
 import ButtonDefault from '../ButtonDefault/ButtonDefault'
-import redirect from '../../assets/redirect.png'
-import { whitepaperLink } from '../../js/vars';
+import redirectBlack from '../../assets/redirectBlack.png'
+import redirectWhite from '../../assets/redirectWhite.png'
+import { whitepaperLink, buyLink } from '../../js/vars';
 import ContractCopy from '../ContractCopy/ContractCopy'
 import Bar from '../Bar/Bar'
+
+import bg from '../../assets/bg.png';
 
 
 const HeaderContent = () => {
     return (
         <div className='hC'>
+            <img src={bg} alt="" className='hC__bg' />
             <Container maxWidth="lg">
                 <div className='hC__container'>
                     <div className='hC__box-1'>
@@ -19,15 +23,17 @@ const HeaderContent = () => {
                         </div>
                         <h1 className='hC__title'>$SMILEK</h1>
                         <div className='hC__btns'>
-                            <ButtonDefault 
-                                bg={true} 
-                                text={'WHITEPAPER'} 
-                                icon={redirect} 
-                                redirect={whitepaperLink} 
+                            <ButtonDefault
+                                bg={true}
+                                text={'BUY NOW'}
+                                icon={redirectWhite}
+                                redirect={buyLink}
                             />
-                            <ButtonDefault 
-                                bg={false} 
-                                text={'EXPLORE MORE'} 
+                            <ButtonDefault
+                                bg={false}
+                                text={'WHITEPAPER'}
+                                icon={redirectBlack}
+                                redirect={whitepaperLink}
                             />
                         </div>
                         <ContractCopy />

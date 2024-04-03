@@ -43,4 +43,13 @@
         visibility: visible;
         opacity: 1;
     }
+
 }
+
+@mixin gradient-text($primary, $secondary, $tertiary) {
+    background-image: linear-gradient(15deg, $primary, $secondary, $tertiary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: rgba(255, 255, 255, 0.349);
+  }

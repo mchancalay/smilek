@@ -1,12 +1,25 @@
 import React from 'react'
+import Live from '../Live/Live';
 
-const CardInfo = ({title, value}) => {
+const CardInfo = ({ title, content, flex }) => {
     return (
-        <div className='cI'>
-            <h4 className='cI__title'>{title}</h4>
-            <p className='cI__value'>$ {value}</p>
+        <div className='cI' style={{ flex: { flex } }}>
+            <div className='cI__bg cI__bg--false'>
+                <h4 className='cI__title'>{title}</h4>
+                <p className='cI__value'>{content}</p>
+            </div>
         </div>
     )
 }
 
 export default CardInfo
+
+
+/*
+
+
+        <div className='cI'>
+            <h4 className='cI__title'>{title}</h4>
+            <p className='cI__value'>$ {value}</p>
+        </div>
+*/

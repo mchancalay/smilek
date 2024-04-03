@@ -1,6 +1,6 @@
 import React from 'react'
 import buy from '../../assets/buy.png'
-import redirect from '../../assets/redirect.png'
+import redirectWhite from '../../assets/redirectWhite.png'
 import { buyLink } from '../../js/vars';
 
 const ButtonImage = () => {
@@ -15,7 +15,7 @@ const ButtonImage = () => {
                 <img className='buttonImage__img' src={buy} alt="" />
                 <div className='buttonImage__box'>
                     <p className='buttonImage__text'>BUY</p>
-                    <img className='buttonImage__icon'src={redirect} alt="" />
+                    <img className='buttonImage__icon'src={redirectWhite} alt="" />
                 </div>
             </div>
         </div>

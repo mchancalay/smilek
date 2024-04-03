@@ -1,0 +1,14 @@
+@use '../../scss/base/colors';
+@use '../../scss/abstracts/vars';
+
+.tokenomics {
+    position: relative;
+
+    &__boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+}

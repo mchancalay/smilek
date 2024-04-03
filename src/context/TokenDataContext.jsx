@@ -7,7 +7,7 @@ const TokenDataProvider = ({ children }) => {
 
   const [tokenData, setTokenData] = useState({
     fdv: 0,
-    priceUsd: 0
+    priceUsd: 0,
   });
 
   const fetchData = async () => {
