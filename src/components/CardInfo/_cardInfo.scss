@@ -33,7 +33,7 @@
         
 
         &--true {
-            background-color: vars.$os-bg-true-color;
+            background-color: black;
             backdrop-filter: blur(vars.$os-blur);
 
             & > .bD__text {

@@ -3,25 +3,23 @@
 @use '../../scss/base/fonts';
 
 .cRM {
-
     
     &__item {
         display: flex;
         align-items: center;
         gap: 1rem;
+        margin-bottom: .5rem;
+        
     }
 
     &__title {
         display: flex;
-        align-items: center;
-        gap: 1rem;
-        font-weight: bold;
+        font-size: vars.$font-size-title-default;
+        margin-bottom: 2rem;
     }
 
     &__box {
         display: flex;
-        flex-direction: row;
-        position: relative;
     }
 
     &__img {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Live from '../Live/Live';
+import 'animate.css';
 
 const CardInfo = ({ title, content, flex }) => {
     return (
@@ -13,13 +13,3 @@ const CardInfo = ({ title, content, flex }) => {
 }
 
 export default CardInfo
-
-
-/*
-
-
-        <div className='cI'>
-            <h4 className='cI__title'>{title}</h4>
-            <p className='cI__value'>$ {value}</p>
-        </div>
-*/

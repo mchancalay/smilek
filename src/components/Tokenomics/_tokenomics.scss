@@ -3,6 +3,8 @@
 
 .tokenomics {
     position: relative;
+    background: linear-gradient(15deg, colors.$primary-op, colors.$secondary-op, colors.$tertiary-op) no-repeat;
+    padding: vars.$padding-curves 0;
 
     &__boxes {
         display: flex;

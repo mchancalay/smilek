@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 6rem;
 
     &__first,
     &__second {
@@ -82,5 +82,26 @@
                 color: colors.$white;
             }
         }
+    }
+}
+
+
+@media (max-width: 899px) {
+    .bar {
+
+        &__first {
+            position: absolute;
+            transform: rotate(-4deg);
+            left: -50px;
+            opacity: 0.5;
+        }
+    
+        &__second {
+            position: absolute;
+            transform: rotate(4deg);
+            left: -50px;
+            opacity: 0.8;
+        }
+
     }
 }

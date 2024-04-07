@@ -11,7 +11,6 @@ const TitleSection = ({ title, firstSide, white }) => {
         <img src={arrow} alt="" className={firstSide ? 'tS__img' : 'tS__img tS__img--mirrored'} />
         <h3 className='tS__title tS__title--white'>{title}</h3>
       </div>
-      <h4 className='tS__subtitle'>Lorem ipsum dolor sit amet consectetur.</h4>
     </div>
   );
 };

@@ -13,12 +13,12 @@ html {
 }
 
 $general-font-sizes: (
-  "h1": 4.8rem,
-  "h2": 3.6rem,
-  "h3": 2.8rem,
-  "h4": 2.6rem,
-  "h5": 2.4rem,
-  "h6": 2.2rem,
+  "h1": vars.$font-size-default,
+  "h2": vars.$font-size-default,
+  "h3": vars.$font-size-default,
+  "h4": vars.$font-size-default,
+  "h5": vars.$font-size-default,
+  "h6": vars.$font-size-default,
   "p": vars.$font-size-default,
   "a": vars.$font-size-default,
   "li": vars.$font-size-default,

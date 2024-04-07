@@ -1,19 +1,23 @@
 /* VARS */
-$font-size-default: 2rem;
+
+$font-size-title-default: 2rem;
+$font-size-default: 1.8rem;
 $font-size-link: 1.6rem;
+
 $icon-width-default: 1.6rem;
+
 $border-radius-default: 8rem;
+
 $navbar-height: 4rem;
 $navbar-padding: 1rem;
 $navbar-total-height: $navbar-height + ($navbar-padding * 2);
-$spacing: 6rem;
-$section-padding: 10rem;
 
-/* own style */
+$section-padding: 4rem;
+$padding-curves: 15rem;
+
 $os-box-shadow: 10px 10px 11px -9px rgba(0, 0, 0, 0.35);
 $os-box-shadow: 10px 10px 11px -9px rgba(0, 0, 0, 0.35);
 $os-bg-true-color: #ffffff36;
-$os-bg-true-dark-color: #1a1a1af1;
 $os-bg-false-color: #ffffffec;
 $os-blur: 1.5rem;
 $os-border: .4rem;
