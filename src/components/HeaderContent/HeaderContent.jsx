@@ -18,10 +18,12 @@ const HeaderContent = () => {
             <Container maxWidth="lg">
                 <div className='hC__container'>
                     <div className='hC__box-1 animate__animated animate__backInDown'>
-                        <div className='hC__box-subtitle'>
+                        <div className='hC__principal'>
                             <h2 className='hC__subtitle'>IT'S NEVER BEEN EASIER TO SMILE TO THE BANKS!</h2>
                         </div>
-                        <h1 className='hC__title'>$SMILEK</h1>
+                        <div className='hC__principal'>
+                            <h1 className='hC__title'>$SMILEK</h1>
+                        </div>
                         <div className='hC__btns'>
                             <ButtonDefault
                                 bg={true}

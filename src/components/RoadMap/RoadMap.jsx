@@ -17,30 +17,41 @@ const RoadMap = () => {
             <Container maxWidth="lg">
                 <div className='rM__container'>
                     <TitleSection title={'Road map'} firstSide={true}></TitleSection>
-                    <Grid container justifyContent='center' alignItems='center'>
-                        <Grid item xs={12} md={5}>
-                            <Grid container>
+                    <div className='rM__desktop'>
+                        <Grid container justifyContent='center' alignItems='center'>
+                            <Grid item xs={12} md={5}>
                                 <div className='rM__steps'>
                                     <CardRoadMap title={'First step'} image={firstStep} items={roadMapFirstStep} />
                                     <CardRoadMap title={'Third step'} image={thirdStep} items={roadMapThirdStep} />
                                     <CardRoadMap title={'Fifth step'} image={fifthStep} items={roadMapFifthStep} />
                                 </div>
                             </Grid>
-                        </Grid>
-                        <Grid item xs={12} md={1}>
-                            <div className='rM__bar'>
-                                <img className='rM__img' src={bar} alt="" />
-                            </div>
-                        </Grid>
-                        <Grid item xs={12} md={5}>
-                            <Grid container>
-                                <div className='rM__steps'>
-                                    <CardRoadMap title={'Second step'} image={secondStep} items={roadMapSecondStep} />
-                                    <CardRoadMap title={'Forth step'} image={forthStep} items={roadMapForthStep} />
+                            <Grid item xs={12} md={1}>
+                                <div className='rM__bar'>
+                                    <img className='rM__img' src={bar} alt="" />
                                 </div>
                             </Grid>
+                            <Grid item xs={12} md={5}>
+                                <Grid container>
+                                    <div className='rM__steps'>
+                                        <CardRoadMap title={'Second step'} image={secondStep} items={roadMapSecondStep} />
+                                        <CardRoadMap title={'Forth step'} image={forthStep} items={roadMapForthStep} />
+                                    </div>
+                                </Grid>
+                            </Grid>
                         </Grid>
-                    </Grid>
+                    </div>
+                    <div className='rM__m'>
+                        <div className='rM__m__steps'>
+                            <div className='rM__m__box'>
+                                <CardRoadMap title={'First step'} image={firstStep} items={roadMapFirstStep} />
+                                <CardRoadMap title={'Second step'} image={secondStep} items={roadMapSecondStep} />
+                                <CardRoadMap title={'Third step'} image={thirdStep} items={roadMapThirdStep} />
+                                <CardRoadMap title={'Forth step'} image={forthStep} items={roadMapForthStep} />
+                                <CardRoadMap title={'Fifth step'} image={fifthStep} items={roadMapFifthStep} />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Container>
         </div>

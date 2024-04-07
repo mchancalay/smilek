@@ -3,7 +3,7 @@
 
 .nb {
   height: vars.$navbar-height;
-  width: 100%;
+  width: 100vw;
   padding: vars.$navbar-padding 0;
   background-color: colors.$white;
   position: fixed;
@@ -89,4 +89,15 @@
       transform: scaleX(1);
     }
   }
+}
+
+@media (max-width: 899px) {
+  .nb {
+
+    &__right {
+      display: none;
+    }
+  }
+
+
 }
