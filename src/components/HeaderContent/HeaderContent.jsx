@@ -14,7 +14,6 @@ const HeaderContent = () => {
 
     return (
         <div className='hC'>
-            <img src={bg} alt="" className='hC__bg' />
             <Container maxWidth="lg">
                 <div className='hC__container'>
                     <div className='hC__box-1 animate__animated animate__backInDown'>

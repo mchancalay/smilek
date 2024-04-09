@@ -1,22 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import { useTokenData } from '../../context/TokenDataContext';
-import { formatMarketCap } from '../../js/functions'
 import TitleSection from '../TitleSection/TitleSection';
 import { Container } from '@mui/material';
 
 const AboutUs = () => {
 
-    const tokenData = useTokenData();
-
-    useEffect(() => {
-        console.log(tokenData)
-    }, [])
-
     return (
         <div className='aU'>
             <Container maxWidth="lg">
                 <div className='aU__container'>
-                <TitleSection title={'About us'} firstSide={true}></TitleSection>
+                    <TitleSection title={'About us'} firstSide={true}></TitleSection>
                     <div className='aU__box'>
                         <div className='aU__text'>
                             <p>Welcome to the $SMILEK era! 🚀 Since launch, we've been the crypto crusade the digital age demanded, championing key finance values like decentralization & fund individualization.</p>
@@ -31,17 +22,3 @@ const AboutUs = () => {
 }
 
 export default AboutUs
-
-{
-
-    /*
-
-                            <div className='aU__cards'>
-                            <CardInfo title={'Token price'} value={tokenData.priceUsd} />
-                            <CardInfo title={'Marketcap'} value={formatMarketCap(tokenData.fdv)} />
-                            <CardInfo title={'Total Supply'} value={totalSupply} />
-                            <CardInfo title={'Circulating Supply'} value={circulatingSupply} />
-                        </div>
-    
-    */
-}

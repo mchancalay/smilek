@@ -30,25 +30,19 @@
 }
 
 
-@media (max-width: 899px) {
+@media (max-width: 599px) {
     .cC {
         flex-direction: column-reverse;
         gap: 1rem;
         
-        &__tooltip {
-            background-color: colors.$light;
-            border-radius: 4rem;
-        }
 
         &__icon {
             width: 1.6rem;
-            height: 100%;
-            padding: 1rem;
 
         }
 
         &__text {
-            font-size: 1.4rem;
+            font-size: 3.5vw;
         }
     }
 }

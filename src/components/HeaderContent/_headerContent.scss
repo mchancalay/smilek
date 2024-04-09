@@ -11,7 +11,6 @@
   padding-top: vars.$navbar-total-height + 4rem;
 
   &__bg {
-    object-fit: cover;
     position: absolute;
     opacity: 0.03;
     z-index: -10;

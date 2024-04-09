@@ -15,12 +15,12 @@ const Bar = () => {
         <div className='bar'>
             <div className='bar__first '>
                 <div className='bar__bg bar__bg--false'>
-                    {renderParagraphs(18)} {/* Genera 10 elementos <p> */}
+                    {renderParagraphs(46)}
                 </div>
             </div>
             <div className='bar__second'>
                 <div className='bar__bg bar__bg--true'>
-                    {renderParagraphs(18)} {/* Genera 10 elementos <p> */}
+                    {renderParagraphs(46)}
                 </div>
             </div>
         </div>
