@@ -19,6 +19,11 @@ const Navbar = () => {
   
   };
 
+  const handleTokenomicsClick = () => {
+    setIsMenuOpen(false); // Cierra el menú al hacer clic en "Tokenomics"
+    window.location.href = '#tokenomics'; // Redirige al usuario a la sección de tokenomics
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {

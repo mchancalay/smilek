@@ -11,8 +11,15 @@ const Tokenomics = () => {
 
     const { fdv, priceUsd } = useTokenData();
 
+    const scrollToTokenomics = () => {
+        const tokenomicsSection = document.getElementById('tokenomics-section');
+        if (tokenomicsSection) {
+            tokenomicsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
-        <div className='tokenomics'>
+        <div id="tokenomics-section" className='tokenomics'>
             <Curves top={top} />
             <Container maxWidth="lg">
                 <div className='tokenomics__container'>
