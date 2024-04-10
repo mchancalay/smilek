@@ -10,13 +10,13 @@ export const roadMapSecondStep = [
 
 export const roadMapThirdStep = [
     { text: '2K Holders', checked: false },
-    { text: 'Listing on CoinMarketCap', checked: true },
+    { text: 'Listing on CMC', checked: true },
 ];
 
 export const roadMapForthStep = [
     { text: '5K Holders', checked: false },
     { text: 'Partners', checked: false },
-    { text: 'Marketing in social media', checked: false },
+    { text: 'Marketing social media', checked: false },
     { text: 'CEX listing', checked: false }
 ];
 

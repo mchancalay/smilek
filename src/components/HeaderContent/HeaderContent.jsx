@@ -1,5 +1,6 @@
 import React from 'react'
 import character from '../../assets/character.png'
+import logoPremium from '../../assets/logoPremium.png'
 import { Container } from '@mui/material'
 import ButtonDefault from '../ButtonDefault/ButtonDefault'
 import redirectBlack from '../../assets/redirectBlack.png'
@@ -7,8 +8,6 @@ import redirectWhite from '../../assets/redirectWhite.png'
 import { whitepaperLink, buyLink } from '../../js/vars';
 import ContractCopy from '../ContractCopy/ContractCopy'
 import Bar from '../Bar/Bar'
-import 'animate.css';
-import bg from '../../assets/bg.png';
 
 const HeaderContent = () => {
 
@@ -16,7 +15,8 @@ const HeaderContent = () => {
         <div className='hC'>
             <Container maxWidth="lg">
                 <div className='hC__container'>
-                    <div className='hC__box-1 animate__animated animate__backInDown'>
+                    <div className='hC__box-1'>
+
                         <div className='hC__principal'>
                             <h2 className='hC__subtitle'>IT'S NEVER BEEN EASIER TO SMILE TO THE BANKS!</h2>
                         </div>
@@ -40,7 +40,7 @@ const HeaderContent = () => {
                         <ContractCopy />
                     </div>
                     <div className='hC__box-2'>
-                        <img src={character} alt="" className='hC__img animate__animated animate__slideInRight' />
+                        <img src={character} alt="" className='hC__img' />
                     </div>
                 </div>
             </Container>

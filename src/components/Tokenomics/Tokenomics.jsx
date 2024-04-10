@@ -19,7 +19,7 @@ const Tokenomics = () => {
     };
 
     return (
-        <div id="tokenomics-section" className='tokenomics'>
+        <div className='tokenomics' id="tokenomics" >
             <Curves top={top} />
             <Container maxWidth="lg">
                 <div className='tokenomics__container'>

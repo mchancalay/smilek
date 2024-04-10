@@ -20,6 +20,7 @@
 
     &__box {
         display: flex;
+        align-items: center;
     }
 
     &__img {
@@ -29,3 +30,11 @@
     }
 
 }
+
+@media (max-width: 495px) {
+    .cRM {
+        &__img {
+            width: 9rem;
+        }
+    }
+  }

@@ -1,6 +1,5 @@
 import React from 'react';
 import TitleSection from '../TitleSection/TitleSection';
-import Curves from '../Curves/Curves';
 import { Container, Grid } from '@mui/material';
 import CardRoadMap from '../CardRoadMap/CardRoadMap';
 import firstStep from '../../assets/firstStep.png';
@@ -13,7 +12,7 @@ import { roadMapFirstStep, roadMapSecondStep, roadMapThirdStep, roadMapForthStep
 
 const RoadMap = () => {
     return (
-        <div className='rM'>
+        <div className='rM' id="roadMap">
             <Container maxWidth="lg">
                 <div className='rM__container'>
                     <TitleSection title={'Road map'} firstSide={true}></TitleSection>

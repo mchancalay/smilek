@@ -199,6 +199,17 @@ a:active {
 .nbM {
   display: none;
 }
+.nbM__item {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(247, 247, 247, 0.968627451);
+  border-radius: 2rem;
+}
+.nbM__redirect {
+  width: 1.2rem;
+}
 
 @media (max-width: 899px) {
   .nb__desktop {
@@ -213,7 +224,7 @@ a:active {
     height: 100vh;
     position: relative;
     top: -5rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -406,8 +417,9 @@ a:active {
 }
 .hC__bg {
   position: absolute;
-  opacity: 0.03;
+  opacity: 0.05;
   z-index: -10;
+  width: 100vw;
 }
 .hC__container {
   display: flex;
@@ -475,7 +487,7 @@ a:active {
     display: block;
   }
   .hC__btns {
-    flex-direction: column;
+    gap: 1rem;
   }
   .hC__subtitle {
     font-size: 2rem;
@@ -488,7 +500,7 @@ a:active {
     width: 100%;
   }
   .hC__title {
-    font-size: 21vw;
+    font-size: 22.5vw;
     text-align: center;
   }
 }
@@ -789,7 +801,7 @@ a:active {
     width: 1.6rem;
   }
   .cC__text {
-    font-size: 3.5vw;
+    font-size: 3.6vw;
   }
 }
 /* -- BASE -- */
@@ -846,6 +858,7 @@ a:active {
 }
 .cRM__box {
   display: flex;
+  align-items: center;
 }
 .cRM__img {
   width: 14rem;
@@ -853,6 +866,11 @@ a:active {
   padding: 1rem;
 }
 
+@media (max-width: 495px) {
+  .cRM__img {
+    width: 9rem;
+  }
+}
 .check {
   width: 1.8rem;
   height: 1.8rem;

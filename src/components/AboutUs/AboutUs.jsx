@@ -4,7 +4,7 @@ import { Container } from '@mui/material';
 const AboutUs = () => {
 
     return (
-        <div className='aU'>
+        <div className='aU' id="aboutUs">
             <Container maxWidth="lg">
                 <div className='aU__container'>
                     <TitleSection title={'About us'} firstSide={true}></TitleSection>

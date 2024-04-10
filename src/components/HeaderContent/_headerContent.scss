@@ -12,8 +12,9 @@
 
   &__bg {
     position: absolute;
-    opacity: 0.03;
+    opacity: 0.05;
     z-index: -10;
+    width: 100vw;
   }
 
   &__container {
@@ -64,6 +65,8 @@
 
 }
 
+
+
 @keyframes floatAnimation {
   0% {
     transform: translateY(0);
@@ -97,7 +100,7 @@
       }
 
       &__btns {
-        flex-direction: column;
+        gap: 1rem;
       }
 
       &__subtitle {
@@ -113,7 +116,7 @@
       }
 
       &__title {
-        font-size: 21vw;
+        font-size: 22.5vw;
         text-align: center;
       }
     }

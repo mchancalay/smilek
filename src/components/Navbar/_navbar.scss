@@ -80,6 +80,19 @@
 
 .nbM {
   display: none;
+
+  &__item {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: colors.$light;
+    border-radius: 2rem;
+  }
+
+  &__redirect {
+    width: 1.2rem;
+  }
 }
 
 @media (max-width: 899px) {
@@ -100,7 +113,7 @@
     height: 100vh;
     position: relative;
     top: -5rem;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;

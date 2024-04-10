@@ -11,8 +11,8 @@ const App = () => {
     <TokenDataProvider>
       <Header />
       <AboutUs />
-      <Tokenomics />
-      <RoadMap />
+      <Tokenomics/>
+      <RoadMap  />
       <Footer />
     </TokenDataProvider>
   )
