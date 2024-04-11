@@ -151,6 +151,7 @@ a:active {
   position: relative;
   align-items: center;
   height: 4rem;
+  padding: 0 1.7rem;
 }
 .nb__desktop {
   height: 4rem;
@@ -162,6 +163,7 @@ a:active {
 .nb__logo {
   height: 100%;
   margin-right: 4rem;
+  cursor: pointer;
 }
 .nb__right {
   display: flex;
@@ -175,7 +177,6 @@ a:active {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 7rem;
 }
 .nb__links {
   display: flex;
@@ -187,13 +188,19 @@ a:active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 4rem;
+  gap: 1rem;
 }
 .nb__item {
   position: relative;
   overflow: hidden;
   cursor: pointer;
   font-size: 1.6rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+}
+.nb__item:hover {
+  background-color: rgba(247, 247, 247, 0.968627451);
 }
 
 .nbM {
@@ -211,7 +218,7 @@ a:active {
   width: 1.2rem;
 }
 
-@media (max-width: 899px) {
+@media (max-width: 899.99px) {
   .nb__desktop {
     display: none;
   }
@@ -417,9 +424,9 @@ a:active {
 }
 .hC__bg {
   position: absolute;
-  opacity: 0.05;
   z-index: -10;
   width: 100vw;
+  top: 0;
 }
 .hC__container {
   display: flex;
@@ -648,7 +655,6 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 6rem;
   overflow: hidden;
 }
 .bar__first, .bar__second {
@@ -718,7 +724,7 @@ a:active {
   color: #fff;
 }
 
-@media (max-width: 899px) {
+@media (max-width: 1032px) {
   .bar__first {
     position: absolute;
     transform: rotate(-4deg);
@@ -730,6 +736,14 @@ a:active {
     transform: rotate(4deg);
     left: -20px;
     opacity: 0.8;
+  }
+}
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
 /* -- ABSTRACTS -- */
@@ -1085,6 +1099,22 @@ a:active {
 }
 
 .hamburger .checkbox:checked + svg .lineBottom {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(-45deg) translate(-5px, 5px);
+}
+
+.lineTopClose {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(45deg) translate(-7px, -5px);
+}
+
+.lineMidClose {
+  stroke-dashoffset: 40;
+}
+
+.lineBottomClose {
   stroke-dashoffset: 0;
   transform-origin: left;
   transform: rotateZ(-45deg) translate(-5px, 5px);

@@ -24,6 +24,7 @@
     position: relative;
     align-items: center;
     height: 4rem;
+    padding: 0 1.7rem;
   }
 
   &__desktop {
@@ -37,6 +38,7 @@
   &__logo {
     height: 100%;
     margin-right: 4rem;
+    cursor: pointer;
   }
 
   &__right {
@@ -52,7 +54,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 7rem;
   }
 
   &__links {
@@ -66,7 +67,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 4rem;
+    gap: 1rem;
   }
 
   &__item {
@@ -74,7 +75,13 @@
     overflow: hidden;
     cursor: pointer;
     font-size: vars.$font-size-link;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: all .3s ease;
 
+    &:hover {
+      background-color: colors.$light;
+    }
   }
 }
 
@@ -95,7 +102,7 @@
   }
 }
 
-@media (max-width: 899px) {
+@media (max-width: 899.99px) {
   .nb {
 
     &__desktop {

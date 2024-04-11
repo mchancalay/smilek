@@ -20,46 +20,16 @@ const Navbar = () => {
 
   };
 
-  const handleAboutUsClick = () => {
-    toggleMenu();
-    const aboutUsSection = document.getElementById('aboutUs');
-    const navbarHeight = document.querySelector('.nb').offsetHeight;
-    const sectionPosition = aboutUsSection.offsetTop;
-    const windowHeight = window.innerHeight;
-    const offset = navbarHeight + 20;
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
 
-    window.scrollTo({
-      top: sectionPosition - offset,
-      behavior: 'smooth',
-    });
-  };
+    if (isMenuOpen) {
+      toggleMenu();
+    }
 
-  const handleTokenomicsClick = () => {
-    toggleMenu();
-    const tokenomicsSection = document.getElementById('tokenomics');
-    const navbarHeight = document.querySelector('.nb').offsetHeight;
-    const sectionPosition = tokenomicsSection.offsetTop;
-    const windowHeight = window.innerHeight;
-    const offset = navbarHeight;
-
-    window.scrollTo({
-      top: sectionPosition - offset,
-      behavior: 'smooth',
-    });
-  };
-
-  const handleRoadMapClick = () => {
-    toggleMenu();
-    const roadMapSection = document.getElementById('roadMap');
-    const navbarHeight = document.querySelector('.nb').offsetHeight;
-    const sectionPosition = roadMapSection.offsetTop;
-    const windowHeight = window.innerHeight;
-    const offset = navbarHeight + 20;
-
-    window.scrollTo({
-      top: sectionPosition - offset,
-      behavior: 'smooth',
-    });
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   useEffect(() => {
@@ -82,14 +52,14 @@ const Navbar = () => {
     <div className={`nb ${isScrolling ? 'nb--scrolling' : ''}`}>
       <Container maxWidth="xl">
         <div className='nb__container'>
-          <img className='nb__logo' src={logo} alt="" />
+          <img className='nb__logo' src={logo} alt="" onClick={() => scrollToSection('home')} />
           <div className='nb__desktop'>
             <div className='nb__left'>
               <div className='nb__items'>
-                <a className='nb__item'>Home</a>
-                <a className='nb__item' onClick={handleAboutUsClick}>About us</a>
-                <a className='nb__item' onClick={handleTokenomicsClick}>Tokenomics</a>
-                <a className='nb__item' onClick={handleRoadMapClick}>Road map</a>
+                <a className='nb__item' onClick={() => scrollToSection('home')}>Home</a>
+                <a className='nb__item' onClick={() => scrollToSection('aboutUs')}>About us</a>
+                <a className='nb__item' onClick={() => scrollToSection('tokenomics')}>Tokenomics</a>
+                <a className='nb__item' onClick={() => scrollToSection('roadMap')}>Road map</a>
               </div>
             </div>
             <div className='nb__right'>
@@ -101,17 +71,17 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className='nb__burger' onClick={toggleMenu}>
-            <Burger />
+          <div className='nb__burger'>
+            <Burger isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
           </div>
         </div>
       </Container>
       {isMenuOpen && (
         <div className='nbM'>
-          <a className='nbM__item'>Home</a>
-          <a className='nbM__item' onClick={handleAboutUsClick}>About us</a>
-          <a className='nbM__item' onClick={handleTokenomicsClick}>Tokenomics</a>
-          <a className='nbM__item' onClick={handleRoadMapClick}>Road map</a>
+          <a className='nbM__item' onClick={() => scrollToSection('home')}>Home</a>
+          <a className='nbM__item' onClick={() => scrollToSection('aboutUs')}>About us</a>
+          <a className='nbM__item' onClick={() => scrollToSection('tokenomics')}>Tokenomics</a>
+          <a className='nbM__item' onClick={() => scrollToSection('roadMap')}>Road map</a>
           <a className='nbM__item' onClick={() => window.open(xLink, '_blank')}>
             x.com
             <img className='nbM__redirect' src={redirect} alt="" />

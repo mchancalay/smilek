@@ -1,5 +1,6 @@
 import React from 'react'
 import 'animate.css';
+import { Container } from '@mui/material';
 
 const Bar = () => {
 
@@ -15,12 +16,12 @@ const Bar = () => {
         <div className='bar'>
             <div className='bar__first '>
                 <div className='bar__bg bar__bg--false'>
-                    {renderParagraphs(46)}
+                    {renderParagraphs(18)}
                 </div>
             </div>
             <div className='bar__second'>
                 <div className='bar__bg bar__bg--true'>
-                    {renderParagraphs(46)}
+                    {renderParagraphs(18)}
                 </div>
             </div>
         </div>

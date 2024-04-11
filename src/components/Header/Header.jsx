@@ -4,7 +4,7 @@ import HeaderContent from '../HeaderContent/HeaderContent';
 
 const Header = () => {
   return (
-    <div className='header'>
+    <div id='home' className='header'>
       <Navbar />
       <HeaderContent />
     </div>

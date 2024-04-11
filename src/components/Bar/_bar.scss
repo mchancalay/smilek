@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 6rem;
     overflow: hidden;
 
     &__first,
@@ -87,7 +86,7 @@
 }
 
 
-@media (max-width: 899px) {
+@media (max-width: 1032px) {
     .bar {
 
         &__first {
@@ -106,3 +105,12 @@
 
     }
 }
+
+@keyframes scrollText {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
