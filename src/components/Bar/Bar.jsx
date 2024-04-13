@@ -14,7 +14,7 @@ const Bar = () => {
 
     return (
         <div className='bar'>
-            <div className='bar__first '>
+            <div className='bar__first'>
                 <div className='bar__bg bar__bg--false'>
                     {renderParagraphs(18)}
                 </div>

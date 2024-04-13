@@ -490,12 +490,14 @@ a:active {
   justify-content: center;
   gap: 3rem;
 }
+.hC__box-2 {
+  position: relative;
+}
 .hC__heads {
   position: absolute;
   top: 0;
   width: 100%;
   left: 0;
-  overflow: hidden;
 }
 .hC__head {
   position: absolute;
@@ -504,16 +506,19 @@ a:active {
   width: 3rem;
   left: 6rem;
   opacity: 0.8;
+  animation: floatAnimation 5s infinite ease-in-out alternate;
 }
 .hC__head2 {
   width: 5rem;
   top: 10rem;
   right: 0rem;
   opacity: 0.9;
+  animation: floatAnimation 5s infinite ease-in-out alternate;
 }
 .hC__head3 {
   width: 7rem;
   top: 10rem;
+  animation: floatAnimation 5s infinite ease-in-out alternate;
 }
 .hC__principal {
   display: flex;
@@ -797,13 +802,13 @@ a:active {
 @media (max-width: 1032px) {
   .bar__first {
     position: absolute;
-    transform: rotate(-4deg);
+    transform: rotate(-6deg);
     left: -20px;
     opacity: 0.5;
   }
   .bar__second {
     position: absolute;
-    transform: rotate(4deg);
+    transform: rotate(6deg);
     left: -20px;
     opacity: 0.8;
   }

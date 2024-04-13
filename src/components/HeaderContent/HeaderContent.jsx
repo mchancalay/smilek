@@ -44,6 +44,11 @@ const HeaderContent = () => {
                     </div>
                     <div className='hC__box-2'>
                         <img src={character} alt="" className='hC__img animate__animated animate__slideInRight' />
+                        <div className='hC__heads animate__animated animate__zoomIn'>
+                            <img src={head} alt="" className='hC__head hC__head1' />
+                            <img src={head} alt="" className='hC__head hC__head2' />
+                            <img src={head} alt="" className='hC__head hC__head3' />
+                        </div>
                     </div>
                 </div>
             </Container>
