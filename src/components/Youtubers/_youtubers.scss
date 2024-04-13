@@ -1,0 +1,14 @@
+@use '../../scss/base/colors';
+@use '../../scss/abstracts/vars';
+
+.youtubers {
+    padding: 0 2rem;
+    position: relative;
+    background: linear-gradient(15deg, colors.$primary-op, colors.$secondary-op, colors.$tertiary-op) no-repeat;
+    padding: vars.$padding-curves 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color:colors.$dark; 
+}

@@ -4,7 +4,7 @@ import { ca } from '../../js/vars';
 
 const ContractCopy = () => {
     const [tooltipText, setTooltipText] = useState('Copy');
-    
+
     const handleCopy = () => {
         navigator.clipboard.writeText(ca)
             .then(() => {
@@ -18,8 +18,10 @@ const ContractCopy = () => {
     return (
         <div className='cC'>
             <div className="cC__tooltip" onClick={handleCopy} >
-                <img className="cC__icon" src={copy} alt=""/>
-                <span className="cC__tooltiptext">{tooltipText}</span>
+                <div className='cC__circle'>
+                    <img className="cC__icon" src={copy} alt="" />
+                </div>
+                <p className="cC__tooltiptext">{tooltipText}</p>
             </div>
             <div className="cC__rectangle">
                 <p className="cC__text">{ca}</p>

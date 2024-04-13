@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <footer className='fter'>
-            
+
             <Curves top={true} />
             <Container maxWidth="lg">
                 <Grid container rowSpacing={3}>
@@ -41,16 +41,16 @@ const Footer = () => {
                     <Grid item xs={12} sm={12} md={3} lg={3}>
                         <div className='fter__items'>
                             <div className='fter__itemsBox'>
-                                <h4 className='fter__title'>Trackers</h4>
+                                <h4 className='fter__title'>Charts</h4>
                                 <ul className='fter__ul'>
+                                    <li className='fter__item'>
+                                        <a className='fter__link' href={dexScreenerLink} target="_blank">DEX Screener</a>
+                                    </li>
                                     <li className='fter__item'>
                                         <a className='fter__link' href={birdeyeLink} target="_blank">Birdeye</a>
                                     </li>
                                     <li className='fter__item'>
                                         <a className='fter__link' href={geckoTerminalLink} target="_blank">Gecko Terminal</a>
-                                    </li>
-                                    <li className='fter__item'>
-                                        <a className='fter__link' href={dexScreenerLink} target="_blank">DEX Screener</a>
                                     </li>
                                 </ul>
                             </div>

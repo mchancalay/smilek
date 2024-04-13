@@ -4,26 +4,18 @@ import CardInfo from '../CardInfo/CardInfo';
 import TitleSection from '../TitleSection/TitleSection';
 import { useTokenData } from '../../context/TokenDataContext';
 import { supply } from '../../js/vars'
-
 import Curves from '../Curves/Curves';
 
 const Tokenomics = () => {
 
     const { fdv, priceUsd } = useTokenData();
-
-    const scrollToTokenomics = () => {
-        const tokenomicsSection = document.getElementById('tokenomics-section');
-        if (tokenomicsSection) {
-            tokenomicsSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
+    
     return (
         <div className='tokenomics' id="tokenomics" >
-            <Curves top={top} />
+            <Curves top={true} />
             <Container maxWidth="lg">
                 <div className='tokenomics__container'>
-                    <TitleSection title={'Tokenomics'} firstSide={false} white={true}></TitleSection>
+                    <TitleSection title={'TOKENOMICS'} firstSide={false} white={true}></TitleSection>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={12} md={12} lg={12}>
                             <CardInfo title={'Supply'} content={supply} />

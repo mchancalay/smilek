@@ -17,7 +17,6 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     document.body.style.overflow = isMenuOpen ? 'auto' : 'hidden';
-
   };
 
   const scrollToSection = (sectionId) => {

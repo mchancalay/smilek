@@ -7,48 +7,13 @@
     flex-direction: column;
     align-self: center;
     justify-content: center;
-    background: linear-gradient(15deg, colors.$primary, colors.$secondary, colors.$tertiary) no-repeat;
-    background-size: 200%;
-    transition: all .3s ease;
-    box-shadow: vars.$os-box-shadow;
-    -webkit-box-shadow: vars.$os-box-shadow;
-    -moz-box-shadow: vars.$os-box-shadow;
-    height: 12rem;
-    border-radius: 3.2rem;
-    padding: .2rem;
-
-    &:hover {
-        background-position: right center;
-    }
 
     &__bg {
-        height: 100%;
-        border-radius: 3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        padding: 2rem;
-        
-
-        &--true {
-            background-color: black;
-            backdrop-filter: blur(vars.$os-blur);
-
-            & > .bD__text {
-                color: colors.$white;
-            }
-        }
-
-        &--false {
-            background-color: vars.$os-bg-false-color;
-            backdrop-filter: blur(vars.$os-blur);
-
-            & > .bD__text {
-                color: colors.$white;
-            }
-        }
     }
 
     &__live {
@@ -58,7 +23,8 @@
         align-items: center;
     }
 
-    &__title, &__value {
+    &__title,
+    &__value {
         color: colors.$dark;
     }
 
@@ -73,5 +39,3 @@
     }
 
 }
-
-

@@ -2,16 +2,31 @@
 
 .aU {
 
-    padding: 4rem 0 7rem 0;
+    padding: 7rem 0 7rem 0;
 
     &__box {
         display: flex;
         gap: 2rem;
+        position: relative;
+        padding: 0 2rem;
+    }
+
+    &__container {
+        position: relative;
     }
 
     &__img {
         width: 33rem;
         height: 33rem;
+    }
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        z-index: -100;
+        opacity: 0.05;
+        top: -20px;
+        height: 100%;
     }
 
     &__text {

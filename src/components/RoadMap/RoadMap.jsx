@@ -7,6 +7,7 @@ import secondStep from '../../assets/secondStep.png';
 import thirdStep from '../../assets/thirdStep.png';
 import forthStep from '../../assets/forthStep.png';
 import fifthStep from '../../assets/fifthStep.png';
+import bg from '../../assets/bg.jpg';
 import bar from '../../assets/bar.png';
 import { roadMapFirstStep, roadMapSecondStep, roadMapThirdStep, roadMapForthStep, roadMapFifthStep } from '../../js/roadMap'
 
@@ -15,7 +16,7 @@ const RoadMap = () => {
         <div className='rM' id="roadMap">
             <Container maxWidth="lg">
                 <div className='rM__container'>
-                    <TitleSection title={'Road map'} firstSide={true}></TitleSection>
+                    <TitleSection title={'ROAD MAP'} firstSide={true}></TitleSection>
                     <div className='rM__desktop'>
                         <Grid container justifyContent='center' alignItems='center'>
                             <Grid item xs={12} md={5}>

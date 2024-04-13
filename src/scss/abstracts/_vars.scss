@@ -1,3 +1,5 @@
+@use '../base/colors';
+
 /* VARS */
 
 $font-size-title-default: 2rem;
@@ -16,8 +18,34 @@ $section-padding: 4rem;
 $padding-curves: 15rem;
 
 $os-box-shadow: 10px 10px 11px -9px rgba(0, 0, 0, 0.35);
-$os-box-shadow: 10px 10px 11px -9px rgba(0, 0, 0, 0.35);
+$os-box-shadow-no-op: 10px 10px 11px -9px rgba(0, 0, 0, 0.808);
 $os-bg-true-color: #ffffff36;
 $os-bg-false-color: #ffffffec;
 $os-blur: 1.5rem;
 $os-border: .4rem;
+
+
+/* SHARED STYLES */
+
+.first__bg {
+    background: linear-gradient(15deg, colors.$primary, colors.$secondary, colors.$tertiary) no-repeat;
+    background-size: 200%;
+    padding: .2rem;
+    border-radius: 3.2rem;
+    transition: all .3s ease;
+    box-shadow: $os-box-shadow;
+    -webkit-box-shadow: $os-box-shadow;
+    -moz-box-shadow: $os-box-shadow;
+
+    &:hover {
+        background-position: right center;
+    }
+}
+
+.second__bg {
+    height: 100%;
+    border-radius: 3rem;
+    padding: 2rem;
+    background-color: $os-bg-false-color;
+    backdrop-filter: blur($os-blur);
+}

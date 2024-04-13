@@ -13,10 +13,19 @@
 
     @include mixins.tooltip-styles;
 
+    &__circle {
+        height: 100%;
+        padding: 1rem;
+        border-radius: 50%;
+        transition: all .3s ease;
+        &:hover {
+            background-color: colors.$light;
+        }
+    }
+
     &__icon {
         width: vars.$icon-width-default;
-        height: 100%;
-        padding: .65rem 0;
+
     }
 
     &__rectangle {
@@ -34,7 +43,7 @@
     .cC {
         flex-direction: column-reverse;
         gap: 1rem;
-        
+
 
         &__icon {
             width: 1.6rem;

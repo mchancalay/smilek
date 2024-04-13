@@ -4,6 +4,7 @@ import { TokenDataProvider } from './context/TokenDataContext'
 import AboutUs from './components/AboutUs/AboutUs'
 import RoadMap from './components/RoadMap/RoadMap'
 import Tokenomics from './components/Tokenomics/Tokenomics'
+import Youtubers from './components/Youtubers/Youtubers'
 import Footer from './components/Footer/Footer'
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <AboutUs />
       <Tokenomics/>
       <RoadMap  />
+      <Youtubers />
       <Footer />
     </TokenDataProvider>
   )

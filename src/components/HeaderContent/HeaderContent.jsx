@@ -1,6 +1,6 @@
 import React from 'react'
-import character from '../../assets/character.png'
-import bg from '../../assets/bg.png'
+import character from '../../assets/header.png'
+import bg from '../../assets/bg.jpg'
 import { Container } from '@mui/material'
 import ButtonDefault from '../ButtonDefault/ButtonDefault'
 import redirectBlack from '../../assets/redirectBlack.png'
@@ -8,11 +8,14 @@ import redirectWhite from '../../assets/redirectWhite.png'
 import { whitepaperLink, buyLink } from '../../js/vars';
 import ContractCopy from '../ContractCopy/ContractCopy'
 import Bar from '../Bar/Bar'
+import ParticleBackground from '../ParticleBackground/ParticleBackground';
+import 'animate.css'
 
 const HeaderContent = () => {
 
     return (
         <div className='hC'>
+            <img className='hC__bg' src={bg} alt="" />
             <Container maxWidth="lg">
                 <div className='hC__container'>
                     <div className='hC__box-1'>
@@ -20,7 +23,7 @@ const HeaderContent = () => {
                             <h2 className='hC__subtitle'>IT'S NEVER BEEN EASIER TO SMILE TO THE BANKS!</h2>
                         </div>
                         <div className='hC__principal'>
-                            <h1 className='hC__title'>$SMILEK</h1>
+                            <h1 className='hC__title animate__animated animate__bounceIn'>$SMILEK</h1>
                         </div>
                         <div className='hC__btns'>
                             <ButtonDefault
@@ -39,7 +42,7 @@ const HeaderContent = () => {
                         <ContractCopy />
                     </div>
                     <div className='hC__box-2'>
-                        <img src={character} alt="" className='hC__img' />
+                        <img src={character} alt="" className='hC__img animate__animated animate__fadeInRight' />
                     </div>
                 </div>
             </Container>

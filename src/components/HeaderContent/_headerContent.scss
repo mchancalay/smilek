@@ -13,8 +13,10 @@
   &__bg {
     position: absolute;
     z-index: -10;
+    top: -3rem;
+    opacity: .3;
     width: 100vw;
-    top: 0;
+    height: 80rem;
   }
 
   &__container {
@@ -30,6 +32,12 @@
     align-items: start;
     justify-content: center;
     gap: 3rem;
+  }
+
+  &__principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__title {
@@ -78,21 +86,17 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1000.99px) {
   .hC {
       &__container {
         flex-direction: column;
         align-items: center;
       }
-      &__box {
-        &-2 {
-            display: none;
-        }
-      }
+
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 599.99px) {
     .hC {
 
       &__container {
@@ -120,4 +124,9 @@
         text-align: center;
       }
     }
+}
+
+
+.asdasdasdadsd {
+  z-index: -100;
 }
