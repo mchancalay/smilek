@@ -49,6 +49,7 @@
     top: 0;
     width: 100%;
     left: 0;
+    overflow: hidden;
   }
 
   &__head {
@@ -58,6 +59,7 @@
       width: 3rem;
       left: 6rem;
       opacity: .8;
+      overflow: hidden;
     }
 
     &2 {
@@ -65,11 +67,13 @@
       top: 10rem;
       right: 0rem;
       opacity: .9;
+      overflow: hidden;
     }
 
     &3 {
       width: 7rem;
       top: 10rem;
+      overflow: hidden;
     }
   }
 

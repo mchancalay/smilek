@@ -497,6 +497,7 @@ a:active {
   top: 0;
   width: 100%;
   left: 0;
+  overflow: hidden;
 }
 .hC__head {
   position: absolute;
@@ -505,16 +506,19 @@ a:active {
   width: 3rem;
   left: 6rem;
   opacity: 0.8;
+  overflow: hidden;
 }
 .hC__head2 {
   width: 5rem;
   top: 10rem;
   right: 0rem;
   opacity: 0.9;
+  overflow: hidden;
 }
 .hC__head3 {
   width: 7rem;
   top: 10rem;
+  overflow: hidden;
 }
 .hC__principal {
   display: flex;
