@@ -1,8 +1,6 @@
 import React from 'react'
 import character from '../../assets/header.png'
-import head1 from '../../assets/head1.png'
-import head2 from '../../assets/head2.png'
-import head3 from '../../assets/head3.png'
+import head from '../../assets/head.png'
 import bg from '../../assets/bg.jpg'
 import { Container } from '@mui/material'
 import ButtonDefault from '../ButtonDefault/ButtonDefault'
@@ -11,7 +9,6 @@ import redirectWhite from '../../assets/redirectWhite.png'
 import { whitepaperLink, buyLink } from '../../js/vars';
 import ContractCopy from '../ContractCopy/ContractCopy'
 import Bar from '../Bar/Bar'
-import ParticleBackground from '../ParticleBackground/ParticleBackground';
 import 'animate.css'
 
 const HeaderContent = () => {
@@ -45,7 +42,14 @@ const HeaderContent = () => {
                         </div>
                         <ContractCopy />
                     </div>
-
+                    <div className='hC__box-2'>
+                        <img src={character} alt="" className='hC__img animate__animated animate__slideInRight' />
+                        <div className='hC__heads animate__animated animate__zoomIn'>
+                            <img src={head} alt="" className='hC__head hC__head1' />
+                            <img src={head} alt="" className='hC__head hC__head2' />
+                            <img src={head} alt="" className='hC__head hC__head3' />
+                        </div>
+                    </div>
                 </div>
             </Container>
             <Bar />

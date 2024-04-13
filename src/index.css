@@ -500,16 +500,24 @@ a:active {
 }
 .hC__head {
   position: absolute;
-  width: 100%;
 }
 .hC__head1 {
   animation: floatAnimation 5s infinite ease-in-out alternate;
+  width: 3rem;
+  left: 6rem;
+  opacity: 0.8;
 }
 .hC__head2 {
   animation: floatAnimation 7s infinite ease-in-out alternate;
+  width: 5rem;
+  top: 10rem;
+  right: 0rem;
+  opacity: 0.9;
 }
 .hC__head3 {
   animation: floatAnimation 9s infinite ease-in-out alternate;
+  width: 7rem;
+  top: 10rem;
 }
 .hC__principal {
   display: flex;
@@ -592,13 +600,13 @@ a:active {
     transform: translateY(0) rotate(0deg);
   }
   25% {
-    transform: translateY(-10px) rotate(-1deg);
+    transform: translateY(-15px) rotate(-1deg);
   }
   50% {
     transform: translateY(0) rotate(0deg);
   }
   75% {
-    transform: translateY(10px) rotate(1deg);
+    transform: translateY(15px) rotate(1deg);
   }
   100% {
     transform: translateY(0) rotate(-1deg);
@@ -962,10 +970,6 @@ a:active {
     width: 9rem;
   }
 }
-.asdasd {
-  width: 100%;
-}
-
 /* -- BASE -- */
 .check {
   width: 1.8rem;

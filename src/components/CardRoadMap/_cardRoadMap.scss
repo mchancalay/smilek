@@ -3,7 +3,7 @@
 @use '../../scss/base/fonts';
 
 .cRM {
-    
+
     &__item {
         display: flex;
         align-items: center;
@@ -21,7 +21,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between
-
     }
 
     &__img {
@@ -38,8 +37,4 @@
             width: 9rem;
         }
     }
-  }
-
-  .asdasd {
-    width: 100%;
-  }
+}

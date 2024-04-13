@@ -41,11 +41,9 @@ const TokenDataProvider = ({ children }) => {
   }, []);
 
   return (
-    <div className='asdasd'>
-          <TokenDataContext.Provider value={tokenData}>
+    <TokenDataContext.Provider value={tokenData}>
       {children}
     </TokenDataContext.Provider>
-    </div>
   );
 };
 

@@ -88,14 +88,14 @@ const ParticleBackground = ({ children }) => {
 
   if (init) {
     return (
-      <div className='asdasdasdadsd'>
+      <>
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           options={options}
         />
-        {children} {/* Renderiza el contenido del encabezado */}
-      </div>
+        {children}
+      </>
     );
   }
 
