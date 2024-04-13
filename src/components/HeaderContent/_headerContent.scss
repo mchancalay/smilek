@@ -55,14 +55,12 @@
     position: absolute;
 
     &1 {
-      animation: floatAnimation 5s infinite ease-in-out alternate;
       width: 3rem;
       left: 6rem;
       opacity: .8;
     }
 
     &2 {
-      animation: floatAnimation 7s infinite ease-in-out alternate;
       width: 5rem;
       top: 10rem;
       right: 0rem;
@@ -70,7 +68,6 @@
     }
 
     &3 {
-      animation: floatAnimation 9s infinite ease-in-out alternate;
       width: 7rem;
       top: 10rem;
     }
@@ -117,6 +114,7 @@
 
 }
 
+//      animation: floatAnimation 5s infinite ease-in-out alternate;
 
 @media (max-width: 999.99px) {
   .hC {

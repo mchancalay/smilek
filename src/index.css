@@ -502,20 +502,17 @@ a:active {
   position: absolute;
 }
 .hC__head1 {
-  animation: floatAnimation 5s infinite ease-in-out alternate;
   width: 3rem;
   left: 6rem;
   opacity: 0.8;
 }
 .hC__head2 {
-  animation: floatAnimation 7s infinite ease-in-out alternate;
   width: 5rem;
   top: 10rem;
   right: 0rem;
   opacity: 0.9;
 }
 .hC__head3 {
-  animation: floatAnimation 9s infinite ease-in-out alternate;
   width: 7rem;
   top: 10rem;
 }
