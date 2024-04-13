@@ -10,14 +10,20 @@
   flex-direction: column;
   padding-top: vars.$navbar-total-height + 4rem;
 
-  &__bg {
+  &__bg,
+  &__bg--mobile {
     position: absolute;
     z-index: -10;
     top: -3rem;
     opacity: .3;
     width: 100vw;
     height: 80rem;
+
+    &--mobile {
+      display: none;
+    }
   }
+
 
   &__container {
     display: flex;
@@ -32,6 +38,27 @@
     align-items: start;
     justify-content: center;
     gap: 3rem;
+  }
+
+  &__box-2 {
+    position: relative;
+  }
+
+  &__head {
+    position: absolute;
+    width: 100%;
+    left: 0;
+
+    &1 {
+      animation: floatAnimation 5s infinite ease-in-out alternate;
+      
+    }
+    &2 {
+      animation: floatAnimation 7s infinite ease-in-out alternate;
+    }
+    &3 {
+      animation: floatAnimation 9s infinite ease-in-out alternate;
+    }
   }
 
   &__principal {
@@ -69,64 +96,84 @@
 
   &__img {
     width: 100%;
+    position: relative;
   }
 
 }
 
 
+@media (max-width: 999.99px) {
+  .hC {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__bg {
+      &--mobile {
+        display: flex;
+        top: 370px;
+        transform: scaleX(-1);
+
+      }
+    }
+
+    &__img {
+      width: 50rem;
+    }
+  }
+
+}
+
+@media (max-width: 599px) {
+  .hC {
+
+    &__container {
+      display: block;
+    }
+
+    &__btns {
+      gap: 1rem;
+    }
+
+    &__subtitle {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    &__principal,
+    &__secondary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 22.5vw;
+      text-align: center;
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+}
 
 @keyframes floatAnimation {
   0% {
-    transform: translateY(0);
+      transform: translateY(0) rotate(0deg);
   }
-
+  25% {
+      transform: translateY(-10px) rotate(-1deg);
+  }
+  50% {
+      transform: translateY(0) rotate(0deg);
+  }
+  75% {
+      transform: translateY(10px) rotate(1deg);
+  }
   100% {
-    transform: translateY(-30px);
-    /* Puedes ajustar el valor para cambiar la distancia */
+      transform: translateY(0) rotate(-1deg);
   }
-}
-
-@media (max-width: 1000.99px) {
-  .hC {
-      &__container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-  }
-}
-
-@media (max-width: 599.99px) {
-    .hC {
-
-      &__container {
-        display: block;
-      }
-
-      &__btns {
-        gap: 1rem;
-      }
-
-      &__subtitle {
-        font-size: 2rem;
-        text-align: center;
-      }
-
-      &__principal, &__secondary {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-      }
-
-      &__title {
-        font-size: 22.5vw;
-        text-align: center;
-      }
-    }
-}
-
-
-.asdasdasdadsd {
-  z-index: -100;
 }

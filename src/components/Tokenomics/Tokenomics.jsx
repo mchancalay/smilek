@@ -15,7 +15,7 @@ const Tokenomics = () => {
             <Curves top={true} />
             <Container maxWidth="lg">
                 <div className='tokenomics__container'>
-                    <TitleSection title={'TOKENOMICS'} firstSide={false} white={true}></TitleSection>
+                    <TitleSection title={'Tokenomics'} firstSide={false} white={true}></TitleSection>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={12} md={12} lg={12}>
                             <CardInfo title={'Supply'} content={supply} />

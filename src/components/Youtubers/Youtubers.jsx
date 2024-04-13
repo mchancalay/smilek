@@ -26,7 +26,7 @@ const Youtubers = () => {
         }
       },
       {
-        breakpoint: 699,
+        breakpoint: 825,
         settings: {
           slidesToShow: 1,
         }
@@ -39,7 +39,7 @@ const Youtubers = () => {
       <Curves top={true} />
       <Container maxWidth="lg">
         <TitleSection title={'TRENDING'} firstSide={false}></TitleSection>
-        <Slider {...settings}>
+        <Slider {...settings} className='youtubers__slider'>
           {youtubersData.map((youtuber, index) => (
             <Youtuber key={index} {...youtuber} />
           ))}

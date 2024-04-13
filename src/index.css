@@ -466,13 +466,16 @@ a:active {
   flex-direction: column;
   padding-top: 10rem;
 }
-.hC__bg {
+.hC__bg, .hC__bg--mobile {
   position: absolute;
   z-index: -10;
   top: -3rem;
   opacity: 0.3;
   width: 100vw;
   height: 80rem;
+}
+.hC__bg--mobile, .hC__bg--mobile--mobile {
+  display: none;
 }
 .hC__container {
   display: flex;
@@ -486,6 +489,23 @@ a:active {
   align-items: start;
   justify-content: center;
   gap: 3rem;
+}
+.hC__box-2 {
+  position: relative;
+}
+.hC__head {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.hC__head1 {
+  animation: floatAnimation 5s infinite ease-in-out alternate;
+}
+.hC__head2 {
+  animation: floatAnimation 7s infinite ease-in-out alternate;
+}
+.hC__head3 {
+  animation: floatAnimation 9s infinite ease-in-out alternate;
 }
 .hC__principal {
   display: flex;
@@ -520,24 +540,24 @@ a:active {
 }
 .hC__img {
   width: 100%;
+  position: relative;
 }
 
-@keyframes floatAnimation {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-30px);
-    /* Puedes ajustar el valor para cambiar la distancia */
-  }
-}
-@media (max-width: 1000.99px) {
+@media (max-width: 999.99px) {
   .hC__container {
     flex-direction: column;
     align-items: center;
   }
+  .hC__bg--mobile {
+    display: flex;
+    top: 370px;
+    transform: scaleX(-1);
+  }
+  .hC__img {
+    width: 50rem;
+  }
 }
-@media (max-width: 599.99px) {
+@media (max-width: 599px) {
   .hC__container {
     display: block;
   }
@@ -558,11 +578,27 @@ a:active {
     font-size: 22.5vw;
     text-align: center;
   }
+  .hC__img {
+    width: 100%;
+  }
 }
-.asdasdasdadsd {
-  z-index: -100;
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(10px) rotate(1deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
 }
-
 /* -- BASE -- */
 .rM {
   padding: 5rem 0;
@@ -854,6 +890,7 @@ a:active {
   .cC {
     flex-direction: column-reverse;
     gap: 1rem;
+    margin-bottom: 3rem;
   }
   .cC__icon {
     width: 1.6rem;
@@ -1171,10 +1208,12 @@ a:active {
 
 /* -- BASE -- */
 .youtubers {
-  padding: 0 2rem;
   position: relative;
   background: linear-gradient(15deg, rgba(255, 238, 7, 0.137254902), rgba(221, 31, 255, 0.137254902), rgba(255, 238, 7, 0.137254902)) no-repeat;
-  padding: 15rem 0;
+  padding: 15rem 2rem;
+}
+.youtubers__slider {
+  padding: 0 1rem;
 }
 
 .slick-prev:before,
@@ -1225,7 +1264,6 @@ a:active {
 }
 .ytber__img:hover {
   opacity: 1;
-  transform: scale(1.01);
 }
 
 /* -- BASE -- */

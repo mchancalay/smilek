@@ -1,5 +1,8 @@
 import React from 'react'
 import character from '../../assets/header.png'
+import head1 from '../../assets/head1.png'
+import head2 from '../../assets/head2.png'
+import head3 from '../../assets/head3.png'
 import bg from '../../assets/bg.jpg'
 import { Container } from '@mui/material'
 import ButtonDefault from '../ButtonDefault/ButtonDefault'
@@ -16,6 +19,7 @@ const HeaderContent = () => {
     return (
         <div className='hC'>
             <img className='hC__bg' src={bg} alt="" />
+            <img className='hC__bg--mobile' src={bg} alt="" />
             <Container maxWidth="lg">
                 <div className='hC__container'>
                     <div className='hC__box-1'>
@@ -43,6 +47,9 @@ const HeaderContent = () => {
                     </div>
                     <div className='hC__box-2'>
                         <img src={character} alt="" className='hC__img animate__animated animate__fadeInRight' />
+                        <img src={head1} alt="" className='hC__head hC__head1 animate__animated animate__fadeInRight' />
+                        <img src={head2} alt="" className='hC__head hC__head2 animate__animated animate__fadeInRight' />
+                        <img src={head3} alt="" className='hC__head hC__head3 animate__animated animate__fadeInRight' />
                     </div>
                 </div>
             </Container>

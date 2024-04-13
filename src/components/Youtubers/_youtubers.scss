@@ -2,10 +2,13 @@
 @use '../../scss/abstracts/vars';
 
 .youtubers {
-    padding: 0 2rem;
     position: relative;
     background: linear-gradient(15deg, colors.$primary-op, colors.$secondary-op, colors.$tertiary-op) no-repeat;
-    padding: vars.$padding-curves 0;
+    padding: vars.$padding-curves 2rem;
+    
+    &__slider {
+        padding: 0 1rem;
+    }
 }
 
 .slick-prev:before,
