@@ -464,6 +464,7 @@ a:active {
   display: flex;
   flex-direction: column;
   padding-top: 10rem;
+  overflow: hidden;
 }
 .hC__bg, .hC__bg--mobile {
   position: absolute;
@@ -489,9 +490,6 @@ a:active {
   justify-content: center;
   gap: 3rem;
 }
-.hC__box-2 {
-  position: relative;
-}
 .hC__heads {
   position: absolute;
   top: 0;
@@ -506,19 +504,16 @@ a:active {
   width: 3rem;
   left: 6rem;
   opacity: 0.8;
-  overflow: hidden;
 }
 .hC__head2 {
   width: 5rem;
   top: 10rem;
   right: 0rem;
   opacity: 0.9;
-  overflow: hidden;
 }
 .hC__head3 {
   width: 7rem;
   top: 10rem;
-  overflow: hidden;
 }
 .hC__principal {
   display: flex;

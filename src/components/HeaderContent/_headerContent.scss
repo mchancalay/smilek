@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   padding-top: vars.$navbar-total-height + 4rem;
+  overflow: hidden;
 
   &__bg,
   &__bg--mobile {
@@ -41,7 +42,6 @@
   }
 
   &__box-2 {
-    position: relative;
   }
 
   &__heads {
@@ -59,7 +59,6 @@
       width: 3rem;
       left: 6rem;
       opacity: .8;
-      overflow: hidden;
     }
 
     &2 {
@@ -67,13 +66,11 @@
       top: 10rem;
       right: 0rem;
       opacity: .9;
-      overflow: hidden;
     }
 
     &3 {
       width: 7rem;
       top: 10rem;
-      overflow: hidden;
     }
   }
 
