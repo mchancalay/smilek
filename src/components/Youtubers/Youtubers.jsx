@@ -14,7 +14,7 @@ const Youtubers = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     swipeToSlide: true,
-    arrows: false,
+    arrows: true,
     dots: false,
     autoplay: true,
     autoplaySpeed: 3000,
