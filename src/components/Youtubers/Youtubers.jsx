@@ -38,7 +38,7 @@ const Youtubers = () => {
     <div className="youtubers">
       <Curves top={true} />
       <Container maxWidth="lg">
-        <TitleSection title={'TRENDING'} firstSide={false}></TitleSection>
+        <TitleSection title={'Trending'} firstSide={false}></TitleSection>
         <Slider {...settings} className='youtubers__slider'>
           {youtubersData.map((youtuber, index) => (
             <Youtuber key={index} {...youtuber} />

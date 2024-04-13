@@ -9,7 +9,6 @@
         align-items: center;
         gap: 1rem;
         margin-bottom: .5rem;
-        
     }
 
     &__title {
@@ -21,6 +20,8 @@
     &__box {
         display: flex;
         align-items: center;
+        justify-content: space-between
+
     }
 
     &__img {

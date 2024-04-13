@@ -5,6 +5,7 @@ import AboutUs from './components/AboutUs/AboutUs'
 import RoadMap from './components/RoadMap/RoadMap'
 import Tokenomics from './components/Tokenomics/Tokenomics'
 import Youtubers from './components/Youtubers/Youtubers'
+import Video from './components/Video/Video'
 import Footer from './components/Footer/Footer'
 
 const App = () => {

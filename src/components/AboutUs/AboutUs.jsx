@@ -1,5 +1,7 @@
 import TitleSection from '../TitleSection/TitleSection';
 import { Container } from '@mui/material';
+import bg from '../../assets/bg.jpg'
+
 
 const AboutUs = () => {
 

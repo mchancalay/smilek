@@ -26,18 +26,16 @@ const RoadMap = () => {
                                     <CardRoadMap title={'Fifth step'} image={fifthStep} items={roadMapFifthStep} />
                                 </div>
                             </Grid>
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={12} md={2}>
                                 <div className='rM__bar'>
                                     <img className='rM__img' src={bar} alt="" />
                                 </div>
                             </Grid>
                             <Grid item xs={12} md={5}>
-                                <Grid container>
-                                    <div className='rM__steps'>
-                                        <CardRoadMap title={'Second step'} image={secondStep} items={roadMapSecondStep} />
-                                        <CardRoadMap title={'Forth step'} image={forthStep} items={roadMapForthStep} />
-                                    </div>
-                                </Grid>
+                                <div className='rM__steps'>
+                                    <CardRoadMap title={'Second step'} image={secondStep} items={roadMapSecondStep} />
+                                    <CardRoadMap title={'Forth step'} image={forthStep} items={roadMapForthStep} />
+                                </div>
                             </Grid>
                         </Grid>
                     </div>

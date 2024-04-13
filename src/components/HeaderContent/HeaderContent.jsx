@@ -46,10 +46,12 @@ const HeaderContent = () => {
                         <ContractCopy />
                     </div>
                     <div className='hC__box-2'>
-                        <img src={character} alt="" className='hC__img animate__animated animate__fadeInRight' />
-                        <img src={head1} alt="" className='hC__head hC__head1 animate__animated animate__fadeInRight' />
-                        <img src={head2} alt="" className='hC__head hC__head2 animate__animated animate__fadeInRight' />
-                        <img src={head3} alt="" className='hC__head hC__head3 animate__animated animate__fadeInRight' />
+                        <img src={character} alt="" className='hC__img animate__animated animate__slideInRight' />
+                        <div className='hC__heads animate__animated animate__zoomIn'>
+                            <img src={head1} alt="" className='hC__head hC__head1' />
+                            <img src={head2} alt="" className='hC__head hC__head2' />
+                            <img src={head3} alt="" className='hC__head hC__head3' />
+                        </div>
                     </div>
                 </div>
             </Container>

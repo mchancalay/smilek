@@ -2,4 +2,7 @@
 @use '../../scss/abstracts/vars';
 
 .video {
+    &__video {
+        width: 100%;
+    }
 }

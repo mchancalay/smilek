@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
-import videoFile from '../../assets/Bonklana_rocket1.mp4'; // Ruta relativa al archivo de video
+import videoFile from '../../assets/video.mp4'; // Ruta relativa al archivo de video
+import { Container } from '@mui/material';
+
 
 const Video = () => {
     const videoRef = useRef(null);
@@ -20,10 +22,12 @@ const Video = () => {
 
     return (
         <div className='video'>
-            <video ref={videoRef} controls width="1200px">
-                <source src={videoFile} type="video/mp4" className='video__mp4' />
-                Tu navegador no admite la reproducción de videos.
-            </video>
+            <Container maxWidth="lg">
+                <video ref={videoRef} controls className='video__video'>
+                    <source src={videoFile} type="video/mp4" className='video__mp4' />
+                    Tu navegador no admite la reproducción de videos.
+                </video>
+            </Container>
         </div>
     );
 }

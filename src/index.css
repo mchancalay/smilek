@@ -28,7 +28,6 @@ $tertiary-op: #00FFA310;
 }
 
 .second__bg {
-  height: 100%;
   border-radius: 3rem;
   padding: 2rem;
   background-color: rgba(255, 255, 255, 0.9254901961);
@@ -493,10 +492,15 @@ a:active {
 .hC__box-2 {
   position: relative;
 }
+.hC__heads {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
 .hC__head {
   position: absolute;
   width: 100%;
-  left: 0;
 }
 .hC__head1 {
   animation: floatAnimation 5s infinite ease-in-out alternate;
@@ -541,6 +545,7 @@ a:active {
 .hC__img {
   width: 100%;
   position: relative;
+  z-index: 100;
 }
 
 @media (max-width: 999.99px) {
@@ -650,6 +655,7 @@ a:active {
 }
 .aU {
   padding: 7rem 0 7rem 0;
+  position: relative;
 }
 .aU__box {
   display: flex;
@@ -659,18 +665,6 @@ a:active {
 }
 .aU__container {
   position: relative;
-}
-.aU__img {
-  width: 33rem;
-  height: 33rem;
-}
-.aU__bg {
-  position: absolute;
-  width: 100%;
-  z-index: -100;
-  opacity: 0.05;
-  top: -20px;
-  height: 100%;
 }
 .aU__text {
   flex: 3;
@@ -955,6 +949,7 @@ a:active {
 .cRM__box {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .cRM__img {
   width: 14rem;
@@ -1268,3 +1263,6 @@ a:active {
 
 /* -- BASE -- */
 /* -- BASE -- */
+.video__video {
+  width: 100%;
+}
