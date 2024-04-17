@@ -4,6 +4,7 @@
 
 .cRM {
 
+
     &__item {
         display: flex;
         align-items: center;
@@ -19,22 +20,39 @@
 
     &__box {
         display: flex;
-        align-items: center;
-        justify-content: space-between
+        align-items: start;
+        justify-content: space-between;
+        min-height: 12rem;
+        overflow: hidden;
     }
 
     &__img {
-        width: 14rem;
-        height: 100%;
-        padding: 1rem;
+        width: 25rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -10;
     }
 
 }
 
-@media (max-width: 495px) {
+
+@media (max-width: 459px) {
     .cRM {
         &__img {
-            width: 9rem;
+            right: -40px;
         }
     }
 }
+
+@media (max-width: 420px) {
+    .cRM {
+        &__img {
+            right: -40px;
+            opacity: .3;
+        }
+    }
+}
+
+
+

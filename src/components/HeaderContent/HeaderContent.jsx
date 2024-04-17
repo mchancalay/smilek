@@ -1,7 +1,8 @@
 import React from 'react'
 import character from '../../assets/header.png'
 import head from '../../assets/head.png'
-import bg from '../../assets/bg.jpg'
+import poly from '../../assets/poly.png'
+import polyMobile from '../../assets/polyMobile.png'
 import { Container } from '@mui/material'
 import ButtonDefault from '../ButtonDefault/ButtonDefault'
 import redirectBlack from '../../assets/redirectBlack.png'
@@ -15,8 +16,8 @@ const HeaderContent = () => {
 
     return (
         <div className='hC'>
-            <img className='hC__bg' src={bg} alt="" />
-            <img className='hC__bg--mobile' src={bg} alt="" />
+            <img className='hC__poly' src={poly} alt="" />
+            <img className='hC__poly hC__poly--mobile' src={polyMobile} alt="" />
             <Container maxWidth="lg">
                 <div className='hC__container'>
                     <div className='hC__box-1'>

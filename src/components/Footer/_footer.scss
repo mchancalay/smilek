@@ -2,10 +2,10 @@
 @use '../../scss/abstracts/vars';
 
 .fter {
-
-    background: linear-gradient(15deg, colors.$primary-op, colors.$secondary-op, colors.$tertiary-op) no-repeat;
     position: relative;
-    padding: vars.$padding-curves 0 2rem 0;
+    padding: 4rem 0 2rem 0;
+    margin-top: 70rem;
+    box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
 
     &__container {
         display: flex;
@@ -51,6 +51,15 @@
         font-size: 1.1rem;
         font-weight: 200;
         margin-top: 2rem;
+    }
+
+    &__gradient {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0rem;
+        z-index: -3;
+        opacity: .3;
     }
 }
 

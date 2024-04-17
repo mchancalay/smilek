@@ -10,21 +10,21 @@
   flex-direction: column;
   padding-top: vars.$navbar-total-height + 4rem;
   overflow: hidden;
+  position: relative;
 
-  &__bg,
-  &__bg--mobile {
+  &__poly,
+  &__polyMobile {
     position: absolute;
     z-index: -10;
-    top: -3rem;
-    opacity: .3;
     width: 100vw;
-    height: 80rem;
+    height: 100%;
+    top: -11rem;
+    opacity: .9;
 
     &--mobile {
       display: none;
     }
   }
-
 
   &__container {
     display: flex;
@@ -120,18 +120,18 @@
 }
 
 @media (max-width: 999.99px) {
+
   .hC {
     &__container {
       flex-direction: column;
       align-items: center;
     }
 
-    &__bg {
+    &__poly {
+      display: none;
+
       &--mobile {
         display: flex;
-        top: 370px;
-        transform: scaleX(-1);
-
       }
     }
 
@@ -142,7 +142,7 @@
 
 }
 
-@media (max-width: 599px) {
+@media (max-width: 599.99px) {
   .hC {
 
     &__container {

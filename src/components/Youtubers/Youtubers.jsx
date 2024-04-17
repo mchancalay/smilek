@@ -6,7 +6,6 @@ import { Container } from '@mui/material';
 import TitleSection from '../TitleSection/TitleSection';
 import Youtuber from '../Youtuber/Youtuber';
 import youtubersData from '../../data/yotubers.json';
-import Curves from '../Curves/Curves';
 
 const Youtubers = () => {
   const settings = {
@@ -36,16 +35,14 @@ const Youtubers = () => {
 
   return (
     <div className="youtubers">
-      <Curves top={true} />
       <Container maxWidth="lg">
-        <TitleSection title={'Trending'} firstSide={false}></TitleSection>
+        <TitleSection title={'Trending'}subtitle={'Description of the section'}></TitleSection>
         <Slider {...settings} className='youtubers__slider'>
           {youtubersData.map((youtuber, index) => (
             <Youtuber key={index} {...youtuber} />
           ))}
         </Slider>
       </Container>
-      <Curves top={false} />
     </div>
   );
 };

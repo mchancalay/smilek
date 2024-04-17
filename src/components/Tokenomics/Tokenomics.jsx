@@ -4,7 +4,10 @@ import CardInfo from '../CardInfo/CardInfo';
 import TitleSection from '../TitleSection/TitleSection';
 import { useTokenData } from '../../context/TokenDataContext';
 import { supply } from '../../js/vars'
-import Curves from '../Curves/Curves';
+import gradient from '../../assets/gradient.png';
+import waveBottom from '../../assets/waveBottom.png';
+import waveTop from '../../assets/waveTop.png';
+
 
 const Tokenomics = () => {
 
@@ -12,10 +15,12 @@ const Tokenomics = () => {
     
     return (
         <div className='tokenomics' id="tokenomics" >
-            <Curves top={true} />
+            <img src={waveBottom} alt="" className='tokenomics__waveBottom' />
+            <img src={waveTop} alt="" className='tokenomics__waveTop' />
+            <img src={gradient} alt="" className='tokenomics__gradient' />
             <Container maxWidth="lg">
                 <div className='tokenomics__container'>
-                    <TitleSection title={'Tokenomics'} firstSide={false} white={true}></TitleSection>
+                    <TitleSection title={'Tokenomics'} subtitle={'Tokenomics and live token info'}></TitleSection>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={12} md={12} lg={12}>
                             <CardInfo title={'Supply'} content={supply} />
@@ -38,7 +43,6 @@ const Tokenomics = () => {
                     </Grid>
                 </div>
             </Container>
-            <Curves top={false} />
         </div>
     )
 }
