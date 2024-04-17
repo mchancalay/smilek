@@ -1,10 +1,8 @@
 @use '../../scss/abstracts/vars';
 
 .aU {
-
-    padding: 7rem 0 7rem 0;
     position: relative;
-
+    margin-top: calc(vars.$padding-section / 2);
 
     &__box {
         display: flex;

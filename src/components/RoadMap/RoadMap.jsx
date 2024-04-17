@@ -15,7 +15,7 @@ const RoadMap = () => {
         <div className='rM' id="roadMap">
             <Container maxWidth="lg">
                 <div className='rM__container'>
-                    <TitleSection title={'Road map'} subtitle={'Description of the section'}></TitleSection>
+                    <TitleSection title={'Road map'} subtitle={'the path of $SMILEK'}></TitleSection>
                     <div className='rM__desktop'>
                         <Grid container justifyContent='center' alignItems='center'>
                             <Grid item xs={12} md={5}>

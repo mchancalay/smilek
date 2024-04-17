@@ -1,6 +1,4 @@
 import React from 'react'
-import 'animate.css';
-import { Container } from '@mui/material';
 
 const Bar = () => {
 

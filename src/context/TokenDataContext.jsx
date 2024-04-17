@@ -14,8 +14,6 @@ const TokenDataProvider = ({ children }) => {
     try {
       const response = await fetch(apiDexscreener);
       const data = await response.json();
-
-      console.log(data)
       
       if (data && data.pairs && data.pairs.length > 0) {
         const token = data.pairs[0];

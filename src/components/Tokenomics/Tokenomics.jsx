@@ -20,7 +20,7 @@ const Tokenomics = () => {
             <img src={gradient} alt="" className='tokenomics__gradient' />
             <Container maxWidth="lg">
                 <div className='tokenomics__container'>
-                    <TitleSection title={'Tokenomics'} subtitle={'Tokenomics and live token info'}></TitleSection>
+                    <TitleSection title={'Tokenomics'} subtitle={'and live token info'}></TitleSection>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={12} md={12} lg={12}>
                             <CardInfo title={'Supply'} content={supply} />

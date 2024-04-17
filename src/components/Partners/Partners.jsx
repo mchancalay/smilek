@@ -9,7 +9,7 @@ const Partners = () => {
   return (
     <div className='partners' id="partners">
       <Container maxWidth="lg">
-        <TitleSection title={'Partners'} subtitle={'Short description of the Partners'}></TitleSection>
+        <TitleSection title={'Partners'} subtitle={'and new coming soon!'}></TitleSection>
         <div className='partners__container'>
           <div className='partners__partner first__bg'>
             <div className='partners__img second__bg'>

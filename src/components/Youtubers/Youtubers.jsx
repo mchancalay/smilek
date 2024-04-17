@@ -6,6 +6,9 @@ import { Container } from '@mui/material';
 import TitleSection from '../TitleSection/TitleSection';
 import Youtuber from '../Youtuber/Youtuber';
 import youtubersData from '../../data/yotubers.json';
+import gradient from '../../assets/gradient.png';
+import waveBottom from '../../assets/waveBottom.png';
+import waveTop from '../../assets/waveTop.png';
 
 const Youtubers = () => {
   const settings = {
@@ -35,14 +38,19 @@ const Youtubers = () => {
 
   return (
     <div className="youtubers">
-      <Container maxWidth="lg">
-        <TitleSection title={'Trending'}subtitle={'Description of the section'}></TitleSection>
-        <Slider {...settings} className='youtubers__slider'>
-          {youtubersData.map((youtuber, index) => (
-            <Youtuber key={index} {...youtuber} />
-          ))}
-        </Slider>
-      </Container>
+      <img src={waveBottom} alt="" className='tokenomics__waveBottom' />
+      <img src={waveTop} alt="" className='tokenomics__waveTop' />
+      <img src={gradient} alt="" className='tokenomics__gradient' />
+      <div className="youtubers__container">
+        <Container maxWidth="lg">
+          <TitleSection title={'Trending'} subtitle={'videos about $SMILEK ES'}></TitleSection>
+          <Slider {...settings} className='youtubers__slider'>
+            {youtubersData.map((youtuber, index) => (
+              <Youtuber key={index} {...youtuber} />
+            ))}
+          </Slider>
+        </Container>
+      </div>
     </div>
   );
 };

@@ -56,9 +56,9 @@ const Navbar = () => {
             <div className='nb__left'>
               <div className='nb__items'>
                 <a className='nb__item' onClick={() => scrollToSection('home')}>Home</a>
-                <a className='nb__item' onClick={() => scrollToSection('aboutUs')}>About us</a>
                 <a className='nb__item' onClick={() => scrollToSection('tokenomics')}>Tokenomics</a>
                 <a className='nb__item' onClick={() => scrollToSection('roadMap')}>Road map</a>
+                <a className='nb__item' onClick={() => scrollToSection('partners')}>Partners</a>
               </div>
             </div>
             <div className='nb__right'>
@@ -78,9 +78,9 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className='nbM'>
           <a className='nbM__item' onClick={() => scrollToSection('home')}>Home</a>
-          <a className='nbM__item' onClick={() => scrollToSection('aboutUs')}>About us</a>
           <a className='nbM__item' onClick={() => scrollToSection('tokenomics')}>Tokenomics</a>
           <a className='nbM__item' onClick={() => scrollToSection('roadMap')}>Road map</a>
+          <a className='nbM__item' onClick={() => scrollToSection('aboutUs')}>Partners</a>
           <a className='nbM__item' onClick={() => window.open(xLink, '_blank')}>
             x.com
             <img className='nbM__redirect' src={redirect} alt="" />

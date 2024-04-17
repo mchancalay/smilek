@@ -1,8 +1,10 @@
 @use '../../scss/base/colors';
+@use '../../scss/abstracts/vars';
 
 .rM {
     padding: 5rem 0;
     position: relative;
+    margin-top: calc(vars.$padding-section / 3);
 
     &__m {
         display: none;

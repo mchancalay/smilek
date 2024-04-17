@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Grid } from '@mui/material';
-import Curves from '../Curves/Curves';
 import { xLink, birdeyeLink, telegramENLink, telegramESLink, cmcLink, coinGeckoLink, geckoTerminalLink, dexScreenerLink } from '../../js/vars';
 import gradient from '../../assets/gradient.png';
+
 
 const Footer = () => {
 

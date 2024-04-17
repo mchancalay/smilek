@@ -1,5 +1,4 @@
 import React from 'react'
-import 'animate.css';
 
 const CardInfo = ({ title, content }) => {
     return (
