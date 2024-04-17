@@ -9,7 +9,7 @@ export const roadMapSecondStep = [
 ];
 
 export const roadMapThirdStep = [
-    { text: '2K Holders', checked: false },
+    { text: '2K Holders', checked: true },
     { text: 'Listing on CMC', checked: true },
 ];
 
@@ -17,7 +17,7 @@ export const roadMapForthStep = [
     { text: '5K Holders', checked: false },
     { text: 'Partners', checked: false },
     { text: 'Full marketing', checked: false },
-    { text: 'CEX listing', checked: false }
+    { text: 'CEX listing', checked: true }
 ];
 
 export const roadMapFifthStep = [
