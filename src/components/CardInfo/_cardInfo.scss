@@ -30,12 +30,13 @@
 
     &__title {
         font-size: 16px;
+        color: colors.$white;
     }
 
     &__value {
         font-size: 20px;
         text-align: center;
-
+        color: colors.$white;
     }
 
 }

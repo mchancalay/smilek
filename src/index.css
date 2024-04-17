@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* -- BASE -- */
 @import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
@@ -10,6 +11,20 @@ $secondary-op: #DC1FFF10;
 $tertiary-op: #00FFA310;
 
 */
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Para que esté detrás del contenido */
+}
+
+.hC__asd {
+  width: 100%;
+  height: auto;
+}
+
 /* -- BASE -- */
 /* VARS */
 /* SHARED STYLES */
@@ -30,9 +45,9 @@ $tertiary-op: #00FFA310;
 .second__bg {
   border-radius: 3rem;
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.9254901961);
-  -webkit-backdrop-filter: blur(1.5rem);
-          backdrop-filter: blur(1.5rem);
+  background-color: rgba(0, 0, 0, 0.9254901961);
+  -webkit-backdrop-filter: blur(5rem);
+          backdrop-filter: blur(5rem);
 }
 
 /* -- BASE -- */
@@ -44,79 +59,79 @@ html {
 h1 {
   font-size: 1.8rem;
   font-family: "Space Grotesk", monospace;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 h2 {
   font-size: 1.8rem;
   font-family: "Space Grotesk", monospace;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 h3 {
   font-size: 1.8rem;
   font-family: "Space Grotesk", monospace;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 h4 {
   font-size: 1.8rem;
   font-family: "Space Grotesk", monospace;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 h5 {
   font-size: 1.8rem;
   font-family: "Space Grotesk", monospace;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 h6 {
   font-size: 1.8rem;
   font-family: "Space Grotesk", monospace;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 p {
   font-size: 1.8rem;
   font-family: "Space Grotesk", monospace;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 a {
   font-size: 1.8rem;
   font-family: "Space Grotesk", monospace;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 li {
   font-size: 1.8rem;
   font-family: "Space Grotesk", monospace;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 span {
   font-size: 1.8rem;
   font-family: "Space Grotesk", monospace;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 button {
   font-size: 1.8rem;
   font-family: "Space Grotesk", monospace;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 label {
   font-size: 1.8rem;
   font-family: "Space Grotesk", monospace;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 input {
   font-size: 1.8rem;
   font-family: "Space Grotesk", monospace;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 * {
@@ -179,7 +194,6 @@ a:active {
   display: none;
 }
 .nb--scrolling {
-  background-color: #fff;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 .nb__container {
@@ -298,7 +312,7 @@ a:active {
 .nbLink__tooltip .nbLink__tooltiptext {
   visibility: hidden;
   background-color: #b6b6b6;
-  color: #fff;
+  color: rgba(247, 247, 247, 0.968627451);
   text-align: center;
   border-radius: 2px;
   padding: 0.4rem 1rem;
@@ -381,20 +395,20 @@ a:active {
   gap: 1rem;
 }
 .bD__bg--true {
-  background-color: rgba(255, 255, 255, 0.2117647059);
-  -webkit-backdrop-filter: blur(1.5rem);
-          backdrop-filter: blur(1.5rem);
+  background-color: rgba(0, 0, 0, 0.9254901961);
+  -webkit-backdrop-filter: blur(5rem);
+          backdrop-filter: blur(5rem);
 }
 .bD__bg--true > .bD__text {
-  color: #fff;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 .bD__bg--false {
-  background-color: rgba(255, 255, 255, 0.9254901961);
-  -webkit-backdrop-filter: blur(1.5rem);
-          backdrop-filter: blur(1.5rem);
+  background-color: rgba(0, 0, 0, 0.9254901961);
+  -webkit-backdrop-filter: blur(5rem);
+          backdrop-filter: blur(5rem);
 }
 .bD__bg--false > .bD__text {
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 .bD__icon {
   width: 1.2rem;
@@ -473,6 +487,7 @@ a:active {
 }
 .hC__title {
   flex: 1;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 .hC__text {
   width: 100%;
@@ -662,10 +677,12 @@ a:active {
 }
 .cI__title {
   font-size: 16px;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 .cI__value {
   font-size: 20px;
   text-align: center;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 /* -- BASE -- */
@@ -729,20 +746,20 @@ a:active {
   gap: 1rem;
 }
 .bar__bg--false {
-  background-color: rgba(255, 255, 255, 0.9254901961);
-  -webkit-backdrop-filter: blur(1.5rem);
-          backdrop-filter: blur(1.5rem);
+  background-color: rgba(0, 0, 0, 0.9254901961);
+  -webkit-backdrop-filter: blur(5rem);
+          backdrop-filter: blur(5rem);
 }
 .bar__bg--false > p {
   color: #1d1b21;
 }
 .bar__bg--true {
-  background-color: rgba(255, 255, 255, 0.2117647059);
-  -webkit-backdrop-filter: blur(1.5rem);
-          backdrop-filter: blur(1.5rem);
+  background-color: rgba(0, 0, 0, 0.9254901961);
+  -webkit-backdrop-filter: blur(5rem);
+          backdrop-filter: blur(5rem);
 }
 .bar__bg--true > p {
-  color: #fff;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 
 @media (max-width: 1032px) {
@@ -786,7 +803,7 @@ a:active {
 .cC__tooltip .cC__tooltiptext {
   visibility: hidden;
   background-color: #b6b6b6;
-  color: #fff;
+  color: rgba(247, 247, 247, 0.968627451);
   text-align: center;
   border-radius: 2px;
   padding: 0.4rem 1rem;
@@ -860,11 +877,11 @@ a:active {
   font-weight: bold;
   font-size: 6rem;
   font-weight: 200;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
   text-align: center;
 }
 .tS__subtitle {
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
   font-weight: 200;
   font-size: 2.2rem;
   text-align: center;
@@ -919,7 +936,7 @@ a:active {
   justify-content: center;
 }
 .check__bg {
-  background-color: rgba(255, 255, 255, 0.9254901961);
+  background-color: rgba(0, 0, 0, 0.9254901961);
   border-radius: 50%;
   width: 1.4rem;
   height: 1.4rem;
@@ -928,9 +945,9 @@ a:active {
   align-items: center;
 }
 .check__bg--checked {
-  background-color: rgba(255, 255, 255, 0.2117647059);
-  -webkit-backdrop-filter: blur(1.5rem);
-          backdrop-filter: blur(1.5rem);
+  background-color: rgba(0, 0, 0, 0.9254901961);
+  -webkit-backdrop-filter: blur(5rem);
+          backdrop-filter: blur(5rem);
 }
 .check__check {
   width: 0.9rem;
@@ -1156,7 +1173,7 @@ a:active {
 }
 .ytber__title, .ytber__yt {
   font-size: 1.5rem;
-  color: #1d1b21;
+  color: rgba(247, 247, 247, 0.968627451);
 }
 .ytber__yt:hover {
   text-decoration: underline;

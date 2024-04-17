@@ -6,7 +6,8 @@ $primary-op: #ffee0723;
 $secondary-op: #dd1fff23;
 $tertiary-op: #ffee0723;
 $dark: #1d1b21;
-$white: #fff;
+$black: #060606;
+$white: #f7f7f7f7;
 $light: #f7f7f7f7;
 $gray: #b6b6b6;
 $darkgray: #bbbbbb;
@@ -21,3 +22,18 @@ $secondary-op: #DC1FFF10;
 $tertiary-op: #00FFA310;
 
 */
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Para que esté detrás del contenido */
+  }
+  
+  .hC__asd {
+    width: 100%;
+    height: auto;
+  }
+  

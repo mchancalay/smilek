@@ -31,13 +31,13 @@ const HeaderContent = () => {
                             <ButtonDefault
                                 bg={true}
                                 text={'BUY NOW'}
-                                icon={redirectWhite}
+                                icon={redirectBlack}
                                 redirect={buyLink}
                             />
                             <ButtonDefault
                                 bg={false}
                                 text={'WHITEPAPER'}
-                                icon={redirectBlack}
+                                icon={redirectWhite}
                                 redirect={whitepaperLink}
                             />
                         </div>
