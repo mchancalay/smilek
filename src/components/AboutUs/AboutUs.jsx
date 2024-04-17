@@ -1,6 +1,7 @@
 import TitleSection from '../TitleSection/TitleSection';
 import { Container } from '@mui/material';
 
+
 const AboutUs = () => {
 
     return (

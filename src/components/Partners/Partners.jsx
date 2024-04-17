@@ -3,7 +3,8 @@ import TitleSection from '../TitleSection/TitleSection';
 import { Container } from '@mui/material';
 import coinmarketcap from '../../assets/coinmarketcap.png';
 import coingecko from '../../assets/coingecko.png';
-
+import Partner from '../Partner/Partner';
+import { cmcLink, coinGeckoLink } from '../../js/vars';
 
 const Partners = () => {
   return (
@@ -11,18 +12,8 @@ const Partners = () => {
       <Container maxWidth="lg">
         <TitleSection title={'Partners'} subtitle={'and new coming soon!'}></TitleSection>
         <div className='partners__container'>
-          <div className='partners__partner first__bg'>
-            <div className='partners__img second__bg'>
-              <img className='partners__cmc' src={coinmarketcap} alt="" />
-              <h5>CoinMarketCap</h5>
-            </div>
-          </div>
-          <div className='partners__partner first__bg'>
-            <div className='partners__img second__bg'>
-              <img className='partners__cg' src={coingecko} alt="" />
-              <h5>CoinGecko</h5>
-            </div>
-          </div>
+          <Partner img={coinmarketcap} title={'CoinMarketCap'} redirect={cmcLink} />
+          <Partner img={coingecko} title={'CoinGecko'} redirect={coinGeckoLink} />
         </div>
       </Container>
     </div>

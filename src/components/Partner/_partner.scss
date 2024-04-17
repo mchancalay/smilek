@@ -1,0 +1,24 @@
+.partner {
+    cursor: pointer;
+
+    &__img {
+        width: 25rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__logo {
+        width: 90%;
+        transition: transform 0.3s ease;
+    }
+}
+
+.first__bg:hover {
+    .partner__logo {
+        transform: scale(1.1);
+    }
+}

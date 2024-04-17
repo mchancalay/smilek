@@ -4,47 +4,20 @@
 .partners {
     padding-top: calc(vars.$padding-section / 2);
 
-    &__container{
+    &__container {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
         gap: 3rem;
     }
-
-    &__partner {
-        cursor: pointer;
-    }
-
-    &__img {
-        width: 25rem;
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    &__cmc, &__cg {
-        width: 90%;
-        transition: transform 0.3s ease; 
-    }
-}
-
-.first__bg:hover {
-    .partners__cmc,
-    .partners__cg {
-        transform: scale(1.1);
-    }
 }
 
 @media (max-width: 899.99px) {
     .partners {
-        &__container{
+        &__container {
             flex-direction: column;
             gap: 3rem;
         }
-      
     }
-  }
+}
