@@ -1010,7 +1010,7 @@ a:active {
   font-size: 1.1rem;
   font-weight: 200;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 .fter__gradient {
   position: absolute;
@@ -1191,7 +1191,7 @@ a:active {
   gap: 1rem;
 }
 .partner__logo {
-  width: 100%;
+  width: 70%;
   max-width: 20rem;
   transition: transform 0.3s ease;
 }
