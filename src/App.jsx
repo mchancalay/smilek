@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from './components/Header/Header'
 import { TokenDataProvider } from './context/TokenDataContext'
 import AboutUs from './components/AboutUs/AboutUs'
@@ -9,25 +9,32 @@ import Footer from './components/Footer/Footer'
 import Partners from './components/Partners/Partners'
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simula una carga asincrónica de los componentes
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Cambia el tiempo según sea necesario
+  }, []);
+
   return (
     <TokenDataProvider>
-      <Header />
-      <AboutUs />
-      <Tokenomics />
-      <RoadMap />
-      <Youtubers />
-      <Partners/>
-      <Footer />
+      {isLoading ? (
+        <div>Cargando...</div>
+      ) : (
+        <>
+          <Header />
+          <AboutUs />
+          <Tokenomics />
+          <RoadMap />
+          <Youtubers />
+          <Partners />
+          <Footer />
+        </>
+      )}
     </TokenDataProvider>
   )
 }
 
 export default App
-
-{
-  /*
-        <div id="dexscreener-embed" style={{ position: 'relative', width: '100%', paddingBottom: '125%' }}>
-      <iframe src="https://dexscreener.com/solana/DwwE6q9rPHKEoooMjv99hVUvA4CPUZJhws4CqrrBD7XT?embed=1&theme=dark" style={{ position: 'absolute', width: '100%', height: '100%', top: '0', left: '0', border: '0' }}></iframe>
-    </div>
-  */
-}
