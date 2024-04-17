@@ -12,12 +12,3 @@
         gap: 3rem;
     }
 }
-
-@media (max-width: 899.99px) {
-    .partners {
-        &__container {
-            flex-direction: column;
-            gap: 3rem;
-        }
-    }
-}

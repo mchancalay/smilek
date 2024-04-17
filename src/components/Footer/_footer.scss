@@ -59,7 +59,14 @@
         height: 100%;
         top: 0rem;
         z-index: -11;
-        opacity: .1;
+        opacity: .2;
+    }
+
+    &__bottom {
+        position: absolute;
+        top: -18.75rem;
+        width: 20rem;
+        right: 0;
     }
 
 }

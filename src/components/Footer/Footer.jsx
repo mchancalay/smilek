@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Grid } from '@mui/material';
-import { xLink, birdeyeLink, telegramENLink, telegramESLink, cmcLink, coinGeckoLink, geckoTerminalLink, dexScreenerLink } from '../../js/vars';
+import { xLink, birdeyeLink, telegramENLink, telegramESLink, cmcLink, coinGeckoLink, geckoTerminalLink, dexScreenerLink, mexcLink } from '../../js/vars';
 import gradient from '../../assets/gradient.png';
+import fight from '../../assets/fight2.png'
 
 
 const Footer = () => {
@@ -67,6 +68,9 @@ const Footer = () => {
                                     <li className='fter__item'>
                                         <a className='fter__link' href={coinGeckoLink} target="_blank">CoinGecko</a>
                                     </li>
+                                    <li className='fter__item'>
+                                        <a className='fter__link' href={mexcLink} target="_blank">MEXC</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -76,6 +80,7 @@ const Footer = () => {
                     </Grid>
                 </Grid>
             </Container>
+            <img className='fter__bottom' src={fight} alt="" />
         </footer>
     );
 }

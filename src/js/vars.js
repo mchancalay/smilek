@@ -9,6 +9,7 @@ export const cmcLink = 'https://coinmarketcap.com/es/currencies/bscbet-online/'
 export const coinGeckoLink = 'https://www.coingecko.com/en/coins/smilek'
 export const dexScreenerLink = 'https://dexscreener.com/solana/dwwe6q9rphkeooomjv99hvuva4cpuzjhws4cqrrbd7xt'
 export const geckoTerminalLink = 'https://www.geckoterminal.com/es/solana/pools/DwwE6q9rPHKEoooMjv99hVUvA4CPUZJhws4CqrrBD7XT'
+export const mexcLink = 'https://www.mexc.com/es-ES/exchange/SMILEK_USDT'
 export const apiPolkabridge = 'https://p2papi.polkabridge.org/vault-apis/v1/token-market?tokenSymbol=SMILEK'
 export const apiCoinmarketcap = 'https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=smilek'
 export const apiDexscreener = `https://api.dexscreener.com/latest/dex/tokens/${ca}`

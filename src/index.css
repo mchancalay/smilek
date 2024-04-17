@@ -1018,7 +1018,13 @@ a:active {
   height: 100%;
   top: 0rem;
   z-index: -11;
-  opacity: 0.1;
+  opacity: 0.2;
+}
+.fter__bottom {
+  position: absolute;
+  top: -18.75rem;
+  width: 20rem;
+  right: 0;
 }
 
 @media (max-width: 899px) {
@@ -1177,7 +1183,6 @@ a:active {
   cursor: pointer;
 }
 .partner__img {
-  width: 25rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -1186,7 +1191,8 @@ a:active {
   gap: 1rem;
 }
 .partner__logo {
-  width: 90%;
+  width: 100%;
+  max-width: 20rem;
   transition: transform 0.3s ease;
 }
 
@@ -1204,18 +1210,4 @@ a:active {
   justify-content: center;
   flex-direction: row;
   gap: 3rem;
-}
-
-@media (max-width: 899.99px) {
-  .partners__container {
-    flex-direction: column;
-    gap: 3rem;
-  }
-}
-/* -- BASE -- */
-.video {
-  margin-top: 7.5rem;
-}
-.video__video {
-  width: 100%;
 }
