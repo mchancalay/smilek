@@ -80,7 +80,7 @@ const Navbar = () => {
           <a className='nbM__item' onClick={() => scrollToSection('home')}>Home</a>
           <a className='nbM__item' onClick={() => scrollToSection('tokenomics')}>Tokenomics</a>
           <a className='nbM__item' onClick={() => scrollToSection('roadMap')}>Road map</a>
-          <a className='nbM__item' onClick={() => scrollToSection('aboutUs')}>Partners</a>
+          <a className='nbM__item' onClick={() => scrollToSection('partners')}>Partners</a>
           <a className='nbM__item' onClick={() => window.open(xLink, '_blank')}>
             x.com
             <img className='nbM__redirect' src={redirect} alt="" />
