@@ -14,9 +14,9 @@ export const roadMapThirdStep = [
 ];
 
 export const roadMapForthStep = [
-    { text: '5K Holders', checked: false },
+    { text: '5K Holders', checked: true },
     { text: 'Partners', checked: false },
-    { text: 'Full marketing', checked: false },
+    { text: 'Full marketing', checked: true },
     { text: 'CEX listing', checked: true }
 ];
 
