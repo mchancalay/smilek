@@ -34,7 +34,7 @@ export const roadMapSixStep = [
     { text: 'Fourth and fifth cex listing ', checked: false },
     { text: 'Launch of SMILEK brand', checked: false },
     { text: 'Launch of SMILEK hedge fund ', checked: false },
-    { text: 'Expansion of the Official Smilek Club.', checked: false },
+    { text: 'Expansion of the Official Smilek Club', checked: false },
 ];
 
 export const roadMapSevenStep = [
