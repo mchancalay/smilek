@@ -7,8 +7,10 @@ import secondStep from '../../assets/secondStep.png';
 import thirdStep from '../../assets/thirdStep.png';
 import forthStep from '../../assets/forthStep.png';
 import fifthStep from '../../assets/fifthStep.png';
+import sixStep from '../../assets/sixStep.png';
+import sevenStep from '../../assets/sevenStep.png';
 import bar from '../../assets/bar.png';
-import { roadMapFirstStep, roadMapSecondStep, roadMapThirdStep, roadMapForthStep, roadMapFifthStep } from '../../js/roadMap'
+import { roadMapFirstStep, roadMapSecondStep, roadMapThirdStep, roadMapForthStep, roadMapFifthStep, roadMapSixStep, roadMapSevenStep } from '../../js/roadMap'
 
 const RoadMap = () => {
     return (
@@ -23,6 +25,7 @@ const RoadMap = () => {
                                     <CardRoadMap title={'First step'} image={firstStep} items={roadMapFirstStep} />
                                     <CardRoadMap title={'Third step'} image={thirdStep} items={roadMapThirdStep} />
                                     <CardRoadMap title={'Fifth step'} image={fifthStep} items={roadMapFifthStep} />
+                                    <CardRoadMap title={'Seven step'} image={sevenStep} items={roadMapSevenStep} />
                                 </div>
                             </Grid>
                             <Grid item xs={12} md={2}>
@@ -34,6 +37,7 @@ const RoadMap = () => {
                                 <div className='rM__steps'>
                                     <CardRoadMap title={'Second step'} image={secondStep} items={roadMapSecondStep} />
                                     <CardRoadMap title={'Forth step'} image={forthStep} items={roadMapForthStep} />
+                                    <CardRoadMap title={'Six step'} image={sixStep} items={roadMapSixStep} />
                                 </div>
                             </Grid>
                         </Grid>
@@ -46,6 +50,8 @@ const RoadMap = () => {
                                 <CardRoadMap title={'Third step'} image={thirdStep} items={roadMapThirdStep} />
                                 <CardRoadMap title={'Forth step'} image={forthStep} items={roadMapForthStep} />
                                 <CardRoadMap title={'Fifth step'} image={fifthStep} items={roadMapFifthStep} />
+                                <CardRoadMap title={'Six step'} image={sixStep} items={roadMapSixStep} />
+                                <CardRoadMap title={'Seven step'} image={sevenStep} items={roadMapSevenStep} />
                             </div>
                         </div>
                     </div>

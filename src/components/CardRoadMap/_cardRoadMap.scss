@@ -9,7 +9,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-        margin-bottom: .5rem;
+        margin-bottom: 1rem;
     }
 
     &__title {
@@ -26,32 +26,20 @@
         overflow: hidden;
     }
 
+
     &__img {
-        width: 25rem;
+        height: 15rem;
         position: absolute;
         right: 0;
-        top: 0;
+        bottom: 0px;
         z-index: -10;
+        opacity: .4;
     }
 
-}
-
-
-@media (max-width: 459px) {
-    .cRM {
-        &__img {
-            right: -40px;
-        }
+    &__text {
+        overflow-wrap: break-word; 
     }
-}
 
-@media (max-width: 420px) {
-    .cRM {
-        &__img {
-            right: -40px;
-            opacity: .3;
-        }
-    }
 }
 
 
