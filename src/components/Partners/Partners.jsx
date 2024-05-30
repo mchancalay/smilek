@@ -4,8 +4,9 @@ import { Container, Grid } from '@mui/material';
 import coinmarketcap from '../../assets/coinmarketcap.png';
 import coingecko from '../../assets/coingecko.png';
 import mexc from '../../assets/mexc.png';
+import gotbit from '../../assets/gotbit.png';
 import Partner from '../Partner/Partner';
-import { cmcLink, coinGeckoLink, mexcLink } from '../../js/vars';
+import { cmcLink, coinGeckoLink, mexcLink, gotbitLink } from '../../js/vars';
 
 
 const Partners = () => {
@@ -23,6 +24,9 @@ const Partners = () => {
             </Grid>
             <Grid item xs={6} sm={4} md={4} lg={3} xl={3}>
               <Partner img={mexc} title={'MEXC'} redirect={mexcLink} />
+            </Grid>
+            <Grid item xs={6} sm={4} md={4} lg={3} xl={3}>
+              <Partner img={gotbit} title={'Gotbit'} redirect={gotbitLink} />
             </Grid>
           </Grid>
         </div>
