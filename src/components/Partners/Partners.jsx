@@ -33,9 +33,6 @@ const Partners = () => {
             <Grid item xs={6} sm={4} md={4} lg={3} xl={3}>
               <Partner img={tapbit} title={'Tapbit'} redirect={tapbitLink} />
             </Grid>
-            <Grid item xs={6} sm={4} md={4} lg={3} xl={3}>
-              <Partner img={biconomy} title={'Biconomy'} redirect={biconomyLink} />
-            </Grid>
           </Grid>
         </div>
       </Container>
